@@ -4,14 +4,14 @@
     <meta charset="utf-8" />
     <title>{{title}}</title>
     {{if keywords}}
-    <meta name="keywords" content="{{keywords}}" />
+    <meta name="keywords" content="{{keywords.join(' ')}}" />
     {{/if}}
     {{if description}}
     <meta name="description" content="{{description}}" />
     {{/if}}
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
-  <body class="x-app">
+  <body>
     {{content}}
   </body>
 </html>

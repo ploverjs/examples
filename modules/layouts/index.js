@@ -2,5 +2,14 @@
 
 
 exports.view = function() {
-  this.render();
+  const data = {
+    keywords: [
+      'NodeJs',
+      'Web框架',
+      'KOA',
+      '模块化',
+      '全栈开发'
+    ]
+  };
+  this.render(data);
 };

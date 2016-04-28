@@ -1,0 +1,27 @@
+{
+  "name": "plover-examples",
+  "version": "1.0.0",
+  "description": "plover示例应用",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "plover": "~2.0.1",
+    "plover-arttemplate": "~1.0.5"
+  },
+  "devDependencies": {
+    "eslint": "~2.8.0",
+    "eslint-config-bce": "~1.2.0"
+  },
+  "author": "bencode@163.com",
+  "bugs": {
+    "url": "https://github.com/plover-modules/examples/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plover-modules/examples.git"
+  },
+  "homepage": "https://github.com/plover-modules/examples#readme",
+  "license": "ISC"
+}

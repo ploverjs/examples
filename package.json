@@ -4,16 +4,26 @@
   "description": "plover示例应用",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "build": "build-plover-assets"
   },
   "dependencies": {
+    "bootstrap": "~3.3.6",
     "plover": "~2.0.1",
-    "plover-arttemplate": "~1.0.5"
+    "plover-arttemplate": "~1.0.5",
+    "plover-assets": "~2.0.0",
+    "plover-assets-less": "~1.0.0",
+    "plover-assets-vendor": "~1.0.3",
+    "vue": "~1.0.21"
   },
   "devDependencies": {
-    "eslint": "~2.8.0",
+    "eslint": "~2.9.0",
     "eslint-config-bce": "~1.2.0"
   },
+  "ploverAssetsVendor": [
+    "bootstrap",
+    "vue"
+  ],
   "author": "bencode@163.com",
   "bugs": {
     "url": "https://github.com/plover-modules/examples/issues"

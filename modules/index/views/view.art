@@ -1,1 +1,6 @@
-<h1>{{desc}}</h1>
+<h1 class="logo">欢迎使用 Plover</h1>
+
+<h2>示例目录</h2>
+
+<ul>
+</ul>

@@ -63,6 +63,20 @@ module.exports = {
    * web中间件相关配置
    */
   web: {
+    // 用于设置app.keys, 实际应用需要重新产生一个
+    keys: '17e6b6bc6129097383dcad4fa1602233',
+
+    // https://github.com/koajs/favicon
+    favicon: pathUtil.join(__dirname, '../public/favicon.ico'),
+
+    // https://github.com/koajs/response-time
+    rtime: {},
+
+    // https://github.com/koajs/conditional-get
+    conditional: {},
+
+    // https://github.com/koajs/etag
+    etag: {}
   },
 
 

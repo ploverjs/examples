@@ -9,11 +9,12 @@
   },
   "dependencies": {
     "bootstrap": "~3.3.6",
-    "plover": "~2.0.1",
+    "plover": "~2.0.3",
     "plover-arttemplate": "~1.0.5",
     "plover-assets": "~2.0.0",
     "plover-assets-less": "~1.0.0",
     "plover-assets-vendor": "~1.0.3",
+    "resolve-from": "~2.0.0",
     "vue": "~1.0.21"
   },
   "devDependencies": {

@@ -1,14 +1,15 @@
 <h1 class="logo">欢迎使用 Plover</h1>
 
 <div class="catalog">
-<h2>示例目录</h2>
+<h3>示例目录</h3>
 
 <ul>
+  <li><a href="/form">表单提交</a></li>
 </ul>
 
 
 <div class="pkg-info">
-  <h2>模块版本信息</h2>
+  <h3>模块版本信息</h3>
   <dl class="dl-horizontal">
     {{each modules as info}}
     <dt>{{info.name}}</dt>

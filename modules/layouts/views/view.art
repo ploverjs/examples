@@ -15,7 +15,7 @@
     {{assets.css('bootstrap:dist/css/bootstrap-theme.min.css')}}
     {{assets.cssTag()}}
   </head>
-  <body>
+  <body {{$.layoutViewData()}}>
     <div class="container">
     {{content}}
     </div>

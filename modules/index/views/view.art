@@ -6,21 +6,3 @@
 <ul>
   <li><a href="/form">表单提交</a></li>
 </ul>
-
-
-<div class="pkg-info">
-  <h3>模块版本信息</h3>
-  <dl class="dl-horizontal">
-    {{each modules as info}}
-    <dt>{{info.name}}</dt>
-    <dd>
-      {{info.local.version}}
-      {{if info.remote.version !== info.local.version}}
-      <span style="color: red">
-      latest: {{info.remote.version}}
-      </span>
-      {{/if}}
-    </dd>
-    {{/each}}
-  </dl>
-</div>

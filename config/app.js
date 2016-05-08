@@ -70,16 +70,7 @@ module.exports = {
     favicon: pathUtil.join(__dirname, '../public/favicon.ico'),
 
     // https://github.com/koajs/response-time
-    rtime: {},
-
-    // https://github.com/koajs/conditional-get
-    conditional: {},
-
-    // https://github.com/koajs/etag
-    etag: {},
-
-    // outputCharset
-    outputCharset: {}
+    rtime: {}
   },
 
 

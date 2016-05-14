@@ -4,5 +4,6 @@
 <h3>示例目录</h3>
 
 <ul>
+  <li><a href="/hello">Hello</a></li>
   <li><a href="/form">表单提交</a></li>
 </ul>

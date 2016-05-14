@@ -90,6 +90,28 @@ module.exports = {
 
 
   /**
+   * webpack配置
+   */
+  webpack: {
+    // 配置对modules目录下的前端js文件进行编译
+    match: ['modules/**/*.js'],
+
+    module: {
+      loaders: [
+        {
+          test: /\.js$/,
+          exclude: /node_modules/,
+          loader: 'babel',
+          query: {
+            presets: ['es2015']
+          }
+        }
+      ]
+    }
+  },
+
+
+  /**
    * xview插件相关配置
    */
   xview: {

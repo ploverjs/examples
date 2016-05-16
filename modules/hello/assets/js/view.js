@@ -2,12 +2,12 @@ new Vue({
   el: '.hello-view',
 
   data: {
-    name: 'plover'
+    message: 'Plover'
   },
 
   methods: {
-    greet: function() {
-      alert(`hello ${this.name}`);
+    revert: function() {
+      this.message = this.message.split('').reverse().join('');
     }
   }
 });

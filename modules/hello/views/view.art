@@ -1,3 +1,5 @@
 <h1>{{message}}</h1>
 
-<button v-on:click="greet">Greet</button>
+<button @click="revert">Revert</button>
+
+<div>Message: \{{ message \}}</div>

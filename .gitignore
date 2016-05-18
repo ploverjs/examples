@@ -1,4 +1,6 @@
 # plover
+tmp/
 
 ## arttemplate tmp file
 .*.art.js
+

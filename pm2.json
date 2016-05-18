@@ -1,0 +1,17 @@
+{
+  "apps": [
+    {
+      "name": "plover-examples",
+      "script": "app.js",
+      "exec_mode": "cluster",
+      "instances": 4,
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "env_production": {
+        "NODE_ENV": "production"
+      }
+    }
+  ]
+}
+

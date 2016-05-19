@@ -7,14 +7,7 @@
 const pathUtil = require('path');
 
 
-module.exports = {
-
-  /**
-   * 服务器相关配置
-   */
-  server: {
-    port: 4000
-  },
+exports = module.exports = {
 
   /**
    * 应用根目录
@@ -29,91 +22,109 @@ module.exports = {
   /**
    * 配置根目录
    */
-  configRoot: __dirname,
-
-  /**
-   * 路由规则
-   */
-  routes: {
-
-  },
-
-  /**
-   * 中间件
-   */
-  middlewares: [
-
-  ],
-
-  /**
-   * 服务
-   */
-  services: {
-  },
-
-
-  /**
-   * 模板帮助方法
-   */
-  helpers: {
-  },
-
-
-  /**
-   * web中间件相关配置
-   */
-  web: {
-    // 用于设置app.keys, 实际应用需要重新产生一个
-    keys: ['17e6b6bc6129097383dcad4fa1602233'],
-
-    // https://github.com/koajs/favicon
-    favicon: pathUtil.join(__dirname, '../public/favicon.ico'),
-
-    // https://github.com/koajs/response-time
-    rtime: {}
-  },
-
-
-  /**
-   * 安全相关配置
-   */
-  security: {
-  },
-
-
-  /**
-   * 前端资源相关配置
-   */
-  assets: {
-
-  },
-
-
-  /**
-   * webpack配置
-   */
-  webpack: {
-    // 配置对modules目录下的前端js文件进行编译
-    match: ['modules/**/*.js'],
-
-    module: {
-      loaders: [
-        {
-          test: /\.js$/,
-          exclude: /node_modules/,
-          loader: 'babel',
-          query: {
-            presets: ['es2015']
-          }
-        }
-      ]
-    }
-  },
-
-
-  /**
-   * xview插件相关配置
-   */
-  xview: {
-  }
+  configRoot: __dirname
 };
+
+
+/**
+ * 服务器相关配置
+ */
+exports.server = {
+  port: 4000
+};
+
+
+/**
+ * 路由规则
+ */
+exports.routes = {
+};
+
+
+/**
+ * 中间件
+ */
+exports.middlewares = [
+];
+
+
+/**
+ * 服务
+ */
+exports.services = {
+};
+
+
+/**
+ * 模板帮助方法
+ */
+exports.helpers = {
+};
+
+
+/**
+ * web中间件相关配置
+ */
+exports.web = {
+  // 用于设置app.keys, 实际应用需要重新产生一个
+  keys: ['17e6b6bc6129097383dcad4fa1602233'],
+
+  // https://github.com/koajs/favicon
+  favicon: pathUtil.join(__dirname, '../public/favicon.ico'),
+
+  // https://github.com/koajs/response-time
+  rtime: {}
+};
+
+
+/**
+ * 安全相关配置
+ */
+exports.security = {
+};
+
+
+/**
+ * plover-assets插件相关配置
+ */
+exports.assets = {
+};
+
+
+/**
+ * xview插件相关配置
+ */
+exports.xview = {
+};
+
+
+/**
+ * webpack相关配置
+ */
+exports.webpack = {
+  // 配置对modules目录下的前端js文件进行编译
+  match: ['modules/**/*.js'],
+
+  module: {
+    loaders: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'babel',
+        query: {
+          presets: ['es2015']
+        }
+      }
+    ]
+  },
+
+  plugins: []
+};
+
+// 编译时生效的插件
+if (process.env.PLOVER_ASSETS_BUILD) {
+  const webpack = require('webpack');
+  exports.webpack.plugins = exports.webpack.plugins.concat([
+    new webpack.optimize.UglifyJsPlugin()
+  ]);
+}

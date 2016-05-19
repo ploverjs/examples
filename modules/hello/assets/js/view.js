@@ -1,3 +1,7 @@
+/**
+ * @webpack.entry
+ */
+
 new Vue({
   el: '.hello-view',
 

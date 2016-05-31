@@ -6,4 +6,5 @@
 <ul>
   <li><a href="/hello">Hello</a></li>
   <li><a href="/form">表单提交</a></li>
+  <li><a href="/template">使用EJS模板引擎</a></li>
 </ul>

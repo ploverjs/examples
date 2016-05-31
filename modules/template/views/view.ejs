@@ -1,0 +1,11 @@
+<h1>科目列表</h1>
+<ul>
+<% books.forEach(function(book, index) { %>
+<li>
+  <% if (book.import) { %>
+  <strong><%= book.title %></strong>
+  <% } else { %>
+  <%= book.title %>
+  <% } %>
+</li>
+<% }) %>

@@ -95,6 +95,9 @@ exports.assets = {
  * xview插件相关配置
  */
 exports.xview = {
+  viewdata: {
+    detailHost: 'http://detail-test.plover.com:7001'
+  }
 };
 
 

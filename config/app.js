@@ -88,6 +88,20 @@ exports.security = {
  * plover-assets插件相关配置
  */
 exports.assets = {
+  // 是否启用plover-assets中间件模块
+  // 启动时静态资源由plover应用处理
+  // 用于不将前端资源交给cdn处理的简单应用场景
+  // 在开发模式下总是开启的，方便开发。
+  enableMiddleware: true,
+
+  // 是否开启urlConcat功能，生效于非开发环境
+  enableConcat: true,
+
+
+  // 当打开urlConcat功能时使用
+  concatItems: [
+    { match: /^\/g\/(.*)$/, prefix: '/g/??' }
+  ]
 };
 
 

@@ -116,6 +116,15 @@ exports.xview = {
 
 
 /**
+ * arttemplate配置
+ */
+exports.arttemplate = {
+  // 压缩，去掉html前置多余的空格
+  compress: true
+};
+
+
+/**
  * webpack相关配置
  */
 exports.webpack = {

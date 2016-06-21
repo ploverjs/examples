@@ -1,0 +1,5 @@
+<ul class="books-list">
+{{each books as book}}
+<li><a href="#">{{book.subject}}</a></li>
+{{/each}}
+</ul>

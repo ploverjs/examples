@@ -1,0 +1,6 @@
+<h1>render.child</h1>
+{{app.view('child')}}
+
+
+<h1>render.context</h1>
+{{app.view('context')}}

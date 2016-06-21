@@ -5,6 +5,9 @@
 
 <ul>
   <li><a href="/hello">Hello</a></li>
+  <li><a href="/render">子模块渲染和模板上下文</a></li>
+  <li><a href="/render/context">模板上下文</a></li>
+  <li><a href="/render/child">control渲染</a></li>
   <li><a href="/form">表单提交</a></li>
   <li><a href="/template">使用EJS模板引擎</a></li>
 </ul>

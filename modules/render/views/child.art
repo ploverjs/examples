@@ -1,0 +1,8 @@
+{{$.viewdata('url', 'myurl')}}
+{{$.attr('say', 'hello')}}
+{{$.addClass('books-list-box')}}
+
+<h1>View &amp; Control</h1>
+
+{{app.control('elements/books')}}
+

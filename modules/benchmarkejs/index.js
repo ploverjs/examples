@@ -1,13 +1,6 @@
 'use strict';
 
 
-exports.single = function* () {
-  yield sleep(100);
-  this.layout = false;
-  this.render();
-};
-
-
 exports.view = function* () {
   this.layout = {
     name: 'layout',
@@ -110,3 +103,4 @@ function sleep(time) {
     setTimeout(resolve, time);
   });
 }
+

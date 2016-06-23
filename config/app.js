@@ -123,7 +123,7 @@ exports.xview = {
  */
 exports.arttemplate = {
   // 压缩，去掉html前置多余的空格
-  // compress: true
+  //compress: true
 };
 
 

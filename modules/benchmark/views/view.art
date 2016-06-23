@@ -11,7 +11,7 @@
 {{app.view('banner')}}
 {{each $range(10) as index}}
 <div class="wrap-main clearfix">
-  {{app.view('todayRecommand')}}
+  {{app.view('todayRecommend')}}
   {{app.view('newRoom')}}
   {{app.view('cats')}}
   {{app.view('likeRecommend')}}
@@ -19,7 +19,7 @@
   {{app.view('newBlock')}}
   {{app.view('oldBlock')}}
   {{app.view('city')}}
-  {{app.view('bootom')}}
+  {{app.view('bottom')}}
 </div>
 {{/each}}
 

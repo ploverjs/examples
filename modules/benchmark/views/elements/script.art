@@ -1,0 +1,4 @@
+<script>
+    TB.Global.init();
+</script>
+<script>window.chinaHome = true;</script>

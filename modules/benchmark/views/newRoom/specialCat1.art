@@ -1,0 +1,15 @@
+<div class="room-item">
+  <a class="img" href="https://liaocheng.china.taobao.com/" target="_blank">
+    <img src="https://img.alicdn.com/tps/TB1swC6JVXXXXXBXVXXXXXXXXXX-226-82.jpg" height="80" width="226">
+      <div class="cover J_askNum" data-name="聊城">
+        <span class="name">聊城馆</span>
+        <span class="num"></span>
+      </div>
+  </a>
+  <div class="special-cat">
+      <a class="hot" href="//s.taobao.com/list?q=张北莜麦&source=tesechina&oeid=241000&nocombo=true" target="_blank">张北莜麦</a>
+      <a class="hot" href="//s.taobao.com/list?q=柴沟堡熏肉&source=tesechina&oeid=241000&nocombo=true" target="_blank">柴沟堡熏肉</a>
+      <a href="//s.taobao.com/list?q=张家口莜面&source=tesechina&oeid=241000&nocombo=true" target="_blank">张家口莜面</a>
+      <a href="//s.taobao.com/list?q=糊糊面&source=tesechina&oeid=241000&nocombo=true" target="_blank">糊糊面</a>
+  </div>
+</div>

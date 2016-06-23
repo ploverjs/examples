@@ -1,0 +1,12 @@
+<div class="floor_block daren-recommend" id="J_darenRecommend" data-spm="daren">
+  <div class="head">
+      <h1>
+          <img src="//img.alicdn.com/tps/TB1b3zyKXXXXXaBXpXXXXXXXXXX-238-18.png" alt="">
+      </h1>
+  </div>
+  <div class="content-box clearfix">
+    {{each $range(10) as index}}
+    {{app.control('elements/itemBox')}}
+    {{/each}}
+  </div>
+</div>

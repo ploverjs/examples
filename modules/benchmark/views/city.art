@@ -1,0 +1,18 @@
+<div class="floor_block city" id="J_city" data-spm="hotCity">
+  <div class="head">
+      <h1>
+          <img src="https://img.alicdn.com/tps/TB1ssfEKXXXXXbZXXXXXXXXXXXX-205-18.png" alt="">
+      </h1>
+  </div>
+  <div class="city-box clearfix">
+    {{each $range(10) as index}}
+    {{app.control('city/item')}}
+    {{/each}}
+              <div class="more-item last">
+          <a href="https://chi.taobao.com/china/regionList.htm" target="_blank">
+              <span>更多</span>
+              <p>346座城市已开启</p>
+          </a>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="spm-id" content="{{spm.id}}">
+  <title>{{ title }}</title>
+  <link href="//www.taobao.com/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+  <!-- S GLOBAL JS -->
+  {{assets.js('//g.alicdn.com/??kissy/k/1.4.2/seed-min.js,tb/global/3.5.34/global-min.js', 'lib')}}
+  {{assets.jsTag('lib')}}
+  <!-- E GLOBAL JS -->
+  <!-- S GLOBAL CSS -->
+  {{assets.css('//g.alicdn.com/tb/global/3.5.34/global-min.css')}}
+  {{assets.cssTag()}}
+  <!-- S GLOBAL CSS -->
+</head>
+

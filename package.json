@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "bootstrap": "~3.3.6",
-    "plover": "~2.2.1",
+    "plover": "~2.3.0",
     "plover-arttemplate": "~1.2.0",
     "plover-assets": "~2.1.0",
     "plover-assets-less": "~1.2.1",

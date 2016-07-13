@@ -11,7 +11,7 @@
     "bootstrap": "~3.3.6",
     "plover": "~2.5.0",
     "plover-arttemplate": "~2.0.0",
-    "plover-assets": "~2.1.0",
+    "plover-assets": "~2.2.0",
     "plover-assets-less": "~1.2.1",
     "plover-assets-vendor": "~1.0.3",
     "plover-assets-webpack": "~1.1.0",

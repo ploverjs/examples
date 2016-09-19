@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "bootstrap": "~3.3.6",
-    "plover": "~2.5.0",
+    "plover": "~2.6.0",
     "plover-arttemplate": "~2.0.0",
     "plover-assets": "~2.2.0",
     "plover-assets-less": "~1.2.1",
@@ -19,16 +19,16 @@
     "plover-ejs": "~1.0.0",
     "plover-web-util": "~1.0.0",
     "plover-xview": "~1.1.0",
-    "request": "~2.73.0",
+    "request": "~2.75.0",
     "resolve-from": "~2.0.0",
     "vue": "~1.0.21"
   },
   "devDependencies": {
-    "babel-core": "~6.10.0",
+    "babel-core": "~6.14.0",
     "babel-loader": "~6.2.4",
-    "babel-preset-es2015": "~6.9.0",
-    "eslint": "~3.0.1",
-    "eslint-config-bce": "~1.2.0",
+    "babel-preset-es2015": "~6.14.0",
+    "eslint": "~3.5.0",
+    "eslint-config-bce": "~1.3.0",
     "webpack": "~1.13.0"
   },
   "ploverAssetsVendor": [

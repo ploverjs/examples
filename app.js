@@ -13,5 +13,5 @@ if (require.main === module) {
   const port = settings.server.port;
   app.listen(port);
 
-  console.log(`server started: 127.0.0.1:${port}, env: ${settings.env}`);
+  console.log(`server started: 127.0.0.1:${port}, env: ${settings.env || 'development'}`);
 }

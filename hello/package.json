@@ -3,7 +3,8 @@
   "version": "2.0.0",
   "description": "Hello Plover",
   "scripts": {
-    "start": "node app.js"
+    "start": "NODE_ENV=production node app.js",
+    "dev": "node app.js"
   },
   "dependencies": {
     "ploverx": "~2.1.0"

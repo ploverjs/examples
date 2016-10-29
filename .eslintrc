@@ -1,6 +1,3 @@
 {
-  extends: 'eslint-config-bce',
-  rules: {
-    no-new: 0
-  }
+  extends: 'eslint-config-bce'
 }

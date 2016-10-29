@@ -1,5 +1,0 @@
-<h1>{{message}}</h1>
-
-<button @click="revert">Revert</button>
-
-<div>Message: \{{ message \}}</div>

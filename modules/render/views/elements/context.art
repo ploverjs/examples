@@ -1,6 +1,0 @@
-<tr>
-  <td>csrf</td>
-  <td><code>csrf</code> <i>(需要安装plover-xview插件)</i></td>
-  <td>{{csrf}}</td>
-</tr>
-

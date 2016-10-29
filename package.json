@@ -1,48 +1,22 @@
 {
   "name": "plover-examples",
-  "version": "1.0.0",
-  "description": "plover示例应用",
-  "main": "app.js",
+  "version": "2.0.0",
+  "description": "plover示例应用，演示plover的核心功能。",
   "scripts": {
-    "start": "node app.js",
-    "build": "build-plover-assets"
-  },
-  "dependencies": {
-    "bootstrap": "~3.3.6",
-    "plover": "~2.7.0",
-    "plover-arttemplate": "~3.0.0",
-    "plover-assets": "~2.2.0",
-    "plover-assets-less": "~1.2.1",
-    "plover-assets-vendor": "~1.0.3",
-    "plover-assets-webpack": "~1.1.0",
-    "plover-benchmark": "~1.0.0",
-    "plover-ejs": "~1.0.0",
-    "plover-web-util": "~1.0.0",
-    "plover-xview": "~1.1.0",
-    "request": "~2.75.0",
-    "resolve-from": "~2.0.0",
-    "vue": "~1.0.28"
-  },
-  "devDependencies": {
-    "babel-core": "~6.16.0",
-    "babel-loader": "~6.2.4",
-    "babel-preset-es2015": "~6.16.0",
-    "eslint": "~3.7.0",
-    "eslint-config-bce": "~1.3.0",
-    "webpack": "~1.13.0"
-  },
-  "ploverAssetsVendor": [
-    "bootstrap",
-    "vue"
-  ],
-  "author": "bencode@163.com",
-  "bugs": {
-    "url": "https://github.com/plover-modules/examples/issues"
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/plover-modules/examples.git"
+    "url": "git+https://github.com/ploverjs/examples.git"
   },
-  "homepage": "https://github.com/plover-modules/examples#readme",
-  "license": "ISC"
+  "author": "bencode@163.com",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^3.9.0",
+    "eslint-config-bce": "^1.3.0"
+  },
+  "bugs": {
+    "url": "https://github.com/ploverjs/examples/issues"
+  },
+  "homepage": "https://github.com/ploverjs/examples#readme"
 }

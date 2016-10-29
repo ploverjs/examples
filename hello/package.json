@@ -7,6 +7,6 @@
     "dev": "node app.js"
   },
   "dependencies": {
-    "ploverx": "~2.1.0"
+    "ploverx": "~2.1.1"
   }
 }

@@ -8,5 +8,7 @@
   },
   "dependencies": {
     "ploverx": "^2.1.2"
-  }
+  },
+  "author": "bencode@163.com",
+  "license": "ISC"
 }

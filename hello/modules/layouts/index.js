@@ -1,4 +1,4 @@
-exports.view = function() {
+exports.index = function() {
   const data = {
     pageTitle: 'plover示例'
   };

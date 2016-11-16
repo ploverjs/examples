@@ -19,6 +19,10 @@ art-template-for-plover@~3.6.0:
   version "3.6.0"
   resolved "https://r.cnpmjs.org/art-template-for-plover/download/art-template-for-plover-3.6.0.tgz#74ed380e8169001af4f2ee439b9d9b94b95443b5"
 
+async@~1.0.0:
+  version "1.0.0"
+  resolved "https://r.cnpmjs.org/async/download/async-1.0.0.tgz#f8fc04ca3a13784ade9e1641af98578cfbd647a9"
+
 balanced-match@^0.4.1:
   version "0.4.2"
   resolved "https://r.cnpmjs.org/balanced-match/download/balanced-match-0.4.2.tgz#cb3f3e3c732dc0f01ee70b403f302e61d7709838"
@@ -34,6 +38,10 @@ base64-url@1.3.3:
 bindings@^1.2.1:
   version "1.2.1"
   resolved "https://r.cnpmjs.org/bindings/download/bindings-1.2.1.tgz#14ad6113812d2d37d72e67b4cacb4bb726505f11"
+
+bluebird@~3.4.6:
+  version "3.4.6"
+  resolved "https://r.cnpmjs.org/bluebird/download/bluebird-3.4.6.tgz#01da8d821d87813d158967e743d5fe6c62cf8c0f"
 
 brace-expansion@^1.0.0:
   version "1.1.6"
@@ -64,6 +72,10 @@ co-redis@~2.1.0:
 co@^4.0.2, co@^4.4.0, co@~4.6.0:
   version "4.6.0"
   resolved "https://r.cnpmjs.org/co/download/co-4.6.0.tgz#6ea6bdf3d853ae54ccb8e47bfa0bf3f9031fb184"
+
+colors@1.0.x:
+  version "1.0.3"
+  resolved "https://r.cnpmjs.org/colors/download/colors-1.0.3.tgz#0433f44d809680fdeb60ed260f1b0c262e82a40b"
 
 commander@~2.9.0:
   version "2.9.0"
@@ -123,6 +135,10 @@ csrf@^3.0.0:
     rndm "1.2.0"
     tsscmp "1.0.5"
     uid-safe "2.1.1"
+
+cycle@1.0.x:
+  version "1.0.3"
+  resolved "https://r.cnpmjs.org/cycle/download/cycle-1.0.3.tgz#21e80b2be8580f98b468f379430662b046c34ad2"
 
 debug@*, debug@^2.2.0, debug@~2.3.0:
   version "2.3.2"
@@ -190,6 +206,10 @@ extend@~3.0.0:
   version "3.0.0"
   resolved "https://r.cnpmjs.org/extend/download/extend-3.0.0.tgz#5a474353b9f3353ddd8176dfd37b91c83a46f1d4"
 
+eyes@0.1.x:
+  version "0.1.8"
+  resolved "https://r.cnpmjs.org/eyes/download/eyes-0.1.8.tgz#62cf120234c683785d902348a800ef3e0cc20bc0"
+
 fresh@^0.3.0:
   version "0.3.0"
   resolved "https://r.cnpmjs.org/fresh/download/fresh-0.3.0.tgz#651f838e22424e7566de161d8358caa199f83d4f"
@@ -203,6 +223,14 @@ fs-extra@~0.30.0:
     klaw "^1.0.0"
     path-is-absolute "^1.0.0"
     rimraf "^2.2.8"
+
+fs-extra@~1.0.0:
+  version "1.0.0"
+  resolved "https://r.cnpmjs.org/fs-extra/download/fs-extra-1.0.0.tgz#cd3ce5f7e7cb6145883fcae3191e9877f8587950"
+  dependencies:
+    graceful-fs "^4.1.2"
+    jsonfile "^2.1.0"
+    klaw "^1.0.0"
 
 fs.realpath@^1.0.0:
   version "1.0.0"
@@ -303,7 +331,7 @@ isarray@0.0.1:
   version "0.0.1"
   resolved "https://r.cnpmjs.org/isarray/download/isarray-0.0.1.tgz#8a18acfca9a8f4177e09abfc6038939b05d1eedf"
 
-isstream@~0.1.2:
+isstream@~0.1.2, isstream@0.1.x:
   version "0.1.2"
   resolved "https://r.cnpmjs.org/isstream/download/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
 
@@ -464,7 +492,7 @@ ms@0.7.2:
   version "0.7.2"
   resolved "https://r.cnpmjs.org/ms/download/ms-0.7.2.tgz#ae25cf2512b3885a1d95d7f037868d8431124765"
 
-mz@^2.0.0, mz@^2.1.0, mz@2:
+mz@^2.0.0, mz@^2.1.0, mz@~2.5.0, mz@2:
   version "2.5.0"
   resolved "https://r.cnpmjs.org/mz/download/mz-2.5.0.tgz#2859025df03d46b57bb317174b196477ce64cec1"
   dependencies:
@@ -592,7 +620,7 @@ plover-ejs@~1.1.0:
   dependencies:
     ejs "~2.5.2"
 
-plover-logger@~1.4.0, plover-logger@~1.4.1:
+plover-logger@~1.4.0, plover-logger@~1.4.1, plover-logger@~1.4.3:
   version "1.4.3"
   resolved "https://r.cnpmjs.org/plover-logger/download/plover-logger-1.4.3.tgz#2262f866a792742db524e4e8f96aa6a37430e349"
   dependencies:
@@ -645,9 +673,9 @@ plover-xview@~1.2.0:
     escape-html "~1.0.3"
     plover-util "~1.5.1"
 
-plover@~2.8.4:
-  version "2.8.4"
-  resolved "https://r.cnpmjs.org/plover/download/plover-2.8.4.tgz#07fb0ae9e09e96d043fef49ccfcce3fa8ac4f9f3"
+plover@~2.9.0:
+  version "2.9.0"
+  resolved "https://r.cnpmjs.org/plover/download/plover-2.9.0.tgz#bc2ff6c0c6559bcdabf2803f0b187de055c16ff5"
   dependencies:
     antsort "~1.1.2"
     co "~4.6.0"
@@ -658,7 +686,7 @@ plover@~2.8.4:
     jsonp-body "~1.0.0"
     koa "~1.2.4"
     koa-compose "~2.5.1"
-    mz "~2.4.0"
+    mz "~2.5.0"
     output-formatter "~1.0.1"
     path-to-regexp "~1.2.1"
     plover-logger "~1.4.0"
@@ -667,19 +695,23 @@ plover@~2.8.4:
     ready-callback "~1.0.0"
     resolve-from "~2.0.0"
 
-ploverx@^2.1.2:
-  version "2.1.2"
-  resolved "https://r.cnpmjs.org/ploverx/download/ploverx-2.1.2.tgz#f537091f623d74a60564ba3faa26da4b63144710"
+ploverx@^2.2.0:
+  version "2.2.0"
+  resolved "https://r.cnpmjs.org/ploverx/download/ploverx-2.2.0.tgz#588ac0ea14f47b0de03315a0a1210ae083e44231"
   dependencies:
-    plover "~2.8.4"
+    bluebird "~3.4.6"
+    fs-extra "~1.0.0"
+    plover "~2.9.0"
     plover-arttemplate "~3.0.0"
     plover-assets "~2.4.0"
     plover-assets-vendor "~1.0.3"
     plover-benchmark "~1.1.0"
     plover-ejs "~1.1.0"
+    plover-logger "~1.4.3"
     plover-router "~1.1.0"
     plover-web "~1.2.0"
     plover-xview "~1.2.0"
+    winston "~2.3.0"
 
 qs@~4.0.0:
   version "4.0.0"
@@ -749,6 +781,10 @@ setprototypeof@1.0.1:
   version "1.0.1"
   resolved "https://r.cnpmjs.org/setprototypeof/download/setprototypeof-1.0.1.tgz#52009b27888c4dc48f591949c0a8275834c1ca7e"
 
+stack-trace@0.0.x:
+  version "0.0.9"
+  resolved "https://r.cnpmjs.org/stack-trace/download/stack-trace-0.0.9.tgz#a8f6eaeca90674c333e7c43953f275b451510695"
+
 statuses@^1.2.0, "statuses@>= 1.2.1 < 2", "statuses@>= 1.3.0 < 2":
   version "1.3.0"
   resolved "https://r.cnpmjs.org/statuses/download/statuses-1.3.0.tgz#8e55758cb20e7682c1f4fce8dcab30bf01d1e07a"
@@ -801,6 +837,17 @@ uuid@~2.0.1:
 vary@^1.0.0:
   version "1.1.0"
   resolved "https://r.cnpmjs.org/vary/download/vary-1.1.0.tgz#e1e5affbbd16ae768dd2674394b9ad3022653140"
+
+winston@~2.3.0:
+  version "2.3.0"
+  resolved "https://r.cnpmjs.org/winston/download/winston-2.3.0.tgz#207faaab6fccf3fe493743dd2b03dbafc7ceb78c"
+  dependencies:
+    async "~1.0.0"
+    colors "1.0.x"
+    cycle "1.0.x"
+    eyes "0.1.x"
+    isstream "0.1.x"
+    stack-trace "0.0.x"
 
 wrappy@1:
   version "1.0.2"

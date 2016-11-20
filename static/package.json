@@ -1,0 +1,13 @@
+{
+  "name": "plover-examples",
+  "version": "2.0.0",
+  "description": "Hello Plover",
+  "scripts": {
+    "start": "NODE_ENV=production node app.js",
+    "dev": "node app.js"
+  },
+  "dependencies": {
+    "ploverx": "^2.4.0"
+  },
+  "license": "ISC"
+}

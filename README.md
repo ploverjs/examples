@@ -17,4 +17,6 @@ npm start
 
 ## 示例目录
 
-- [Hello](hello)
+- [Hello Plover](hello)
+- [static](static)
+

@@ -36,8 +36,8 @@ bindings@^1.2.1:
   resolved "https://r.cnpmjs.org/bindings/download/bindings-1.2.1.tgz#14ad6113812d2d37d72e67b4cacb4bb726505f11"
 
 bluebird@~3.4.6:
-  version "3.4.6"
-  resolved "https://r.cnpmjs.org/bluebird/download/bluebird-3.4.6.tgz#01da8d821d87813d158967e743d5fe6c62cf8c0f"
+  version "3.4.7"
+  resolved "https://r.cnpmjs.org/bluebird/download/bluebird-3.4.7.tgz#f72d760be09b7f76d08ed8fae98b289a8d05fab3"
 
 brace-expansion@^1.0.0:
   version "1.1.6"
@@ -59,7 +59,7 @@ co-body@^4.2.0:
     raw-body "~2.1.2"
     type-is "~1.6.6"
 
-co-redis@~2.1.0:
+co-redis@~2.1.1:
   version "2.1.1"
   resolved "https://r.cnpmjs.org/co-redis/download/co-redis-2.1.1.tgz#8bc3717977c9ee5bfb6b28f39ae01bcf724d2dde"
   dependencies:
@@ -97,8 +97,8 @@ concat-map@0.0.1:
   resolved "https://r.cnpmjs.org/concat-map/download/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
 
 content-disposition@~0.5.0:
-  version "0.5.1"
-  resolved "https://r.cnpmjs.org/content-disposition/download/content-disposition-0.5.1.tgz#87476c6a67c8daa87e32e87616df883ba7fb071b"
+  version "0.5.2"
+  resolved "https://r.cnpmjs.org/content-disposition/download/content-disposition-0.5.2.tgz#0cf68bb9ddf5f2be7961c3a85178cb85dba78cb4"
 
 content-type@^1.0.0:
   version "1.0.2"
@@ -120,8 +120,8 @@ core-util-is@~1.0.1:
   resolved "https://r.cnpmjs.org/core-util-is/download/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
 
 crc@~3.4.0:
-  version "3.4.1"
-  resolved "https://r.cnpmjs.org/crc/download/crc-3.4.1.tgz#65d5830b1a2569557cfb324c0e679998521473ee"
+  version "3.4.4"
+  resolved "https://r.cnpmjs.org/crc/download/crc-3.4.4.tgz#9da1e980e3bd44fc5c93bf5ab3da3378d85e466b"
 
 create-tag@~0.2.0:
   version "0.2.0"
@@ -142,9 +142,9 @@ cycle@1.0.x:
   version "1.0.3"
   resolved "https://r.cnpmjs.org/cycle/download/cycle-1.0.3.tgz#21e80b2be8580f98b468f379430662b046c34ad2"
 
-debug@*, debug@^2.2.0, debug@~2.3.0, debug@~2.3.2:
-  version "2.3.3"
-  resolved "https://r.cnpmjs.org/debug/download/debug-2.3.3.tgz#40c453e67e6e13c901ddec317af8986cda9eff8c"
+debug@*, debug@^2.2.0:
+  version "2.6.0"
+  resolved "https://r.cnpmjs.org/debug/download/debug-2.6.0.tgz#bc596bcabe7617f11d9fa15361eded5608b8499b"
   dependencies:
     ms "0.7.2"
 
@@ -153,6 +153,12 @@ debug@~2.2.0:
   resolved "https://r.cnpmjs.org/debug/download/debug-2.2.0.tgz#f87057e995b1a1f6ae6a4960664137bc56f039da"
   dependencies:
     ms "0.7.1"
+
+debug@~2.3.0, debug@~2.3.2, debug@~2.3.3:
+  version "2.3.3"
+  resolved "https://r.cnpmjs.org/debug/download/debug-2.3.3.tgz#40c453e67e6e13c901ddec317af8986cda9eff8c"
+  dependencies:
+    ms "0.7.2"
 
 deep-equal@^1.0.0, deep-equal@~1.0.0:
   version "1.0.1"
@@ -179,8 +185,8 @@ ee-first@1.1.1:
   resolved "https://r.cnpmjs.org/ee-first/download/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
 
 ejs@~2.5.2:
-  version "2.5.2"
-  resolved "https://r.cnpmjs.org/ejs/download/ejs-2.5.2.tgz#21444ba09386f0c65b6eafb96a3d51bcb3be80d1"
+  version "2.5.5"
+  resolved "https://r.cnpmjs.org/ejs/download/ejs-2.5.5.tgz#6ef4e954ea7dcf54f66aad2fe7aa421932d9ed77"
 
 error-inject@~1.0.0:
   version "1.0.0"
@@ -254,8 +260,8 @@ glob@^7.0.5:
     path-is-absolute "^1.0.0"
 
 graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.1.9:
-  version "4.1.10"
-  resolved "https://r.cnpmjs.org/graceful-fs/download/graceful-fs-4.1.10.tgz#f2d720c22092f743228775c75e3612632501f131"
+  version "4.1.11"
+  resolved "https://r.cnpmjs.org/graceful-fs/download/graceful-fs-4.1.11.tgz#0e8bdfe4d1ddb8854d64e04ea7c00e2a026e5658"
 
 "graceful-readlink@>= 1.0.0":
   version "1.0.1"
@@ -290,7 +296,11 @@ http-errors@~1.4.0:
     inherits "2.0.1"
     statuses ">= 1.2.1 < 2"
 
-iconv-lite@~0.4.13, iconv-lite@0.4.13:
+iconv-lite@~0.4.13:
+  version "0.4.15"
+  resolved "https://r.cnpmjs.org/iconv-lite/download/iconv-lite-0.4.15.tgz#fe265a218ac6a57cfe854927e9d04c19825eddeb"
+
+iconv-lite@0.4.13:
   version "0.4.13"
   resolved "https://r.cnpmjs.org/iconv-lite/download/iconv-lite-0.4.13.tgz#1f88aba4ab0b1508e8312acc39345f36e992e2f2"
 
@@ -401,8 +411,8 @@ koa-favicon@~1.2.1:
     mz "^2.0.0"
 
 koa-generic-session@~1.11.3:
-  version "1.11.3"
-  resolved "https://r.cnpmjs.org/koa-generic-session/download/koa-generic-session-1.11.3.tgz#7dfe2031b85ee866594576affd8650b719c0acac"
+  version "1.11.4"
+  resolved "https://r.cnpmjs.org/koa-generic-session/download/koa-generic-session-1.11.4.tgz#8e002e0d422605f5aa55642e99e1be3a543e33f1"
   dependencies:
     copy-to "~2.0.1"
     crc "~3.4.0"
@@ -415,12 +425,12 @@ koa-is-json@^1.0.0:
   resolved "https://r.cnpmjs.org/koa-is-json/download/koa-is-json-1.0.0.tgz#273c07edcdcb8df6a2c1ab7d59ee76491451ec14"
 
 koa-redis@~2.1.2:
-  version "2.1.2"
-  resolved "https://r.cnpmjs.org/koa-redis/download/koa-redis-2.1.2.tgz#701974aee8730b991ad0b8b49288b24a59526e37"
+  version "2.1.3"
+  resolved "https://r.cnpmjs.org/koa-redis/download/koa-redis-2.1.3.tgz#8fb4b17235abdc0e19f3996f90f690d9b25b2ed1"
   dependencies:
-    co-redis "~2.1.0"
-    debug "~2.2.0"
-    redis "~2.6.0-2"
+    co-redis "~2.1.1"
+    debug "~2.3.3"
+    redis "~2.6.3"
   optionalDependencies:
     hiredis "~0.5.0"
 
@@ -519,9 +529,9 @@ ms@0.7.2:
   version "0.7.2"
   resolved "https://r.cnpmjs.org/ms/download/ms-0.7.2.tgz#ae25cf2512b3885a1d95d7f037868d8431124765"
 
-mz@^2.0.0, mz@^2.1.0, mz@^2.3.1, mz@~2.5.0, mz@2:
-  version "2.5.0"
-  resolved "https://r.cnpmjs.org/mz/download/mz-2.5.0.tgz#2859025df03d46b57bb317174b196477ce64cec1"
+mz@^2.0.0, mz@^2.1.0, mz@^2.3.1, mz@2:
+  version "2.6.0"
+  resolved "https://r.cnpmjs.org/mz/download/mz-2.6.0.tgz#c8b8521d958df0a4f2768025db69c719ee4ef1ce"
   dependencies:
     any-promise "^1.0.0"
     object-assign "^4.0.1"
@@ -535,9 +545,17 @@ mz@~2.4.0:
     object-assign "^4.0.1"
     thenify-all "^1.0.0"
 
+mz@~2.5.0:
+  version "2.5.0"
+  resolved "https://r.cnpmjs.org/mz/download/mz-2.5.0.tgz#2859025df03d46b57bb317174b196477ce64cec1"
+  dependencies:
+    any-promise "^1.0.0"
+    object-assign "^4.0.1"
+    thenify-all "^1.0.0"
+
 nan@^2.3.4:
-  version "2.4.0"
-  resolved "https://r.cnpmjs.org/nan/download/nan-2.4.0.tgz#fb3c59d45fe4effe215f0b890f8adf6eb32d2232"
+  version "2.5.0"
+  resolved "https://r.cnpmjs.org/nan/download/nan-2.5.0.tgz#aa8f1e34531d807e9e27755b234b4a6ec0c152a8"
 
 negotiator@0.6.1:
   version "0.6.1"
@@ -777,10 +795,10 @@ redis-commands@^1.2.0:
   resolved "https://r.cnpmjs.org/redis-commands/download/redis-commands-1.3.0.tgz#4307d8094aee1315829ab6729b37b99f62365d63"
 
 redis-parser@^2.0.0:
-  version "2.2.0"
-  resolved "https://r.cnpmjs.org/redis-parser/download/redis-parser-2.2.0.tgz#4a01e162af66bd6eae7e6c291f9e25cb430351fa"
+  version "2.3.0"
+  resolved "https://r.cnpmjs.org/redis-parser/download/redis-parser-2.3.0.tgz#313a47965e49ee35ab3a86c93388b403d76237f6"
 
-redis@~2.6.0-2:
+redis@~2.6.3:
   version "2.6.3"
   resolved "https://r.cnpmjs.org/redis/download/redis-2.6.3.tgz#84305b92553c6a1f09c7c47c30b11ace7dbb7ad4"
   dependencies:

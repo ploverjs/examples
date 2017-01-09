@@ -1,3 +1,3 @@
-exports.index = (ctx) => {
-  ctx.render();
+exports.index = function() {
+  this.render();
 };

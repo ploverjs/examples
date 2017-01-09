@@ -1,0 +1,10 @@
+<h1>Books</h1>
+
+<ul class="books">
+  {{each books as book}}
+  <li>
+    <div class="name">{{book.name}}</div>
+    <div class="price">{{book.price}}</div>
+  </li>
+  {{/each}}
+</ul>

@@ -1,5 +1,5 @@
 module.exports = ({ get, resources }) => {
-  get('/', 'topics#index');
+  get('/', 'books#index');
 
-  resources('topics');
+  resources('books');
 };

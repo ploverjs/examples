@@ -1,7 +1,7 @@
 {
-  "name": "static",
-  "version": "2.0.0",
-  "description": "serve static files",
+  "name": "routes",
+  "version": "1.0.0",
+  "description": "routes and restful",
   "scripts": {
     "start": "NODE_ENV=production node app.js",
     "dev": "node app.js"

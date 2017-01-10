@@ -19,4 +19,4 @@ npm start
 
 - [Hello Plover](hello)
 - [静态资源的访问](static)
-- [路由](routes)
+- [路由和RESTful](routes)

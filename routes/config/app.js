@@ -14,6 +14,11 @@ exports.services = {
 };
 
 
+exports.helpers = {
+  priceHelper: pathUtil.join(__dirname, '../lib/helpers/price.js')
+};
+
+
 exports.web = {
   keys: ['99D4ABFE-B032-4D68-A616-F68FADB4BE2F']
 }

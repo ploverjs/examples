@@ -1,0 +1,7 @@
+<h1>{{book.name}}</h1>
+<div>
+  <dl>
+    <dt>Price：</dt>
+    <dd>{{priceHelper.format(book.price)}}</dd>
+  </dl>
+</div>

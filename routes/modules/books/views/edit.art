@@ -1,0 +1,14 @@
+<div>
+  <form action="/books/{{book.id}}" method="post">
+    <label>
+      名称：
+      <input type="text" value="{{book.name}}" />
+    </label>
+    <label>
+      价格：
+      <input type="text" value="{{book.price}}" />
+    </label>
+    <input type="hidden" name="_csrf" value={{csrf}} />
+    <input type="submit" value="save!" />
+  </form>
+</div>

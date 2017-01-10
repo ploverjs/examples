@@ -13,5 +13,8 @@ exports.show = function* () {
     return;
   }
 
+  // 具体的action中可以设置布局中的数据
+  this.layout.data.pageTitle = book.name;
+
   this.render({ book });
 }

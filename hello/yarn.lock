@@ -691,9 +691,9 @@ plover-util@~1.5.1:
   dependencies:
     is-type-of "~1.0.0"
 
-plover-web@~1.4.0:
-  version "1.4.0"
-  resolved "https://r.cnpmjs.org/plover-web/download/plover-web-1.4.0.tgz#00865dafc50e93310816edbe8f93ea97890871e6"
+plover-web@~1.5.0:
+  version "1.5.0"
+  resolved "https://r.cnpmjs.org/plover-web/download/plover-web-1.5.0.tgz#6ab7667598cbf0b519ff27250c99ba192435b0b2"
   dependencies:
     debug "~2.3.2"
     iconv-lite "~0.4.13"
@@ -742,9 +742,9 @@ plover@~2.9.1:
     ready-callback "~1.0.0"
     resolve-from "~2.0.0"
 
-ploverx@^2.6.0:
-  version "2.6.0"
-  resolved "https://r.cnpmjs.org/ploverx/download/ploverx-2.6.0.tgz#0bb2933e7d2407a81a786594db2e220353a6c5d8"
+ploverx@^2.6.1:
+  version "2.6.1"
+  resolved "https://r.cnpmjs.org/ploverx/download/ploverx-2.6.1.tgz#6f485dc9a420f6360aca9809a173833c0c209715"
   dependencies:
     bluebird "~3.4.6"
     fs-extra "~1.0.0"
@@ -756,7 +756,7 @@ ploverx@^2.6.0:
     plover-ejs "~1.1.0"
     plover-logger "~1.4.3"
     plover-router "~1.2.0"
-    plover-web "~1.4.0"
+    plover-web "~1.5.0"
     plover-xview "~1.2.0"
     winston "~2.3.0"
 

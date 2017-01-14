@@ -1,14 +1,30 @@
 <div>
   <form action="/books/{{book.id}}" method="post">
-    <label>
-      名称：
-      <input type="text" value="{{book.name}}" />
-    </label>
-    <label>
-      价格：
-      <input type="text" value="{{book.price}}" />
-    </label>
-    <input type="hidden" name="_csrf" value={{csrf}} />
-    <input type="submit" value="save!" />
+    {{if errors}}
+    <div class="errors">
+      <ul>
+      {{each errors as error}}
+        <li>{{error.message}}</li>
+      {{/each}}
+      </ul>
+    </div>
+    {{/if}}
+    <div class="field">
+      <label>
+        名称：
+        <input type="text" name="name" value="{{book.name}}" />
+      </label>
+    </div>
+    <div class="field">
+      <label>
+        价格：
+        <input type="text" name="price" value="{{book.price}}" />
+      </label>
+    </div>
+    <div class="field">
+      <input type="hidden" name="_csrf" value="{{csrf}}" />
+      <input type="hidden" name="_method" value="put" />
+      <input type="submit" value="save!" />
+    </div>
   </form>
 </div>

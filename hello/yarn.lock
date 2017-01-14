@@ -679,9 +679,9 @@ plover-module-resolver@~1.6.5:
     resolve-from "~2.0.0"
     semver "~5.3.0"
 
-plover-router@~1.1.0:
-  version "1.1.1"
-  resolved "https://r.cnpmjs.org/plover-router/download/plover-router-1.1.1.tgz#16ccb9b3247d76d35d2f2c3a6b03d506067c8a82"
+plover-router@~1.2.0:
+  version "1.2.0"
+  resolved "https://r.cnpmjs.org/plover-router/download/plover-router-1.2.0.tgz#065ab7f71e05e9449c8342213209f41e2b2402db"
   dependencies:
     inflection "~1.10.0"
 
@@ -720,9 +720,9 @@ plover-xview@~1.2.0:
     escape-html "~1.0.3"
     plover-util "~1.5.1"
 
-plover@~2.9.0:
-  version "2.9.0"
-  resolved "https://r.cnpmjs.org/plover/download/plover-2.9.0.tgz#bc2ff6c0c6559bcdabf2803f0b187de055c16ff5"
+plover@~2.9.1:
+  version "2.9.1"
+  resolved "https://r.cnpmjs.org/plover/download/plover-2.9.1.tgz#4c6f4a90934a3de87692de6d91e02a4b4deb88ad"
   dependencies:
     antsort "~1.1.2"
     co "~4.6.0"
@@ -742,20 +742,20 @@ plover@~2.9.0:
     ready-callback "~1.0.0"
     resolve-from "~2.0.0"
 
-ploverx@^2.5.0:
-  version "2.5.0"
-  resolved "https://r.cnpmjs.org/ploverx/download/ploverx-2.5.0.tgz#915ca8012160621f567b801ba24c00772d6b95ee"
+ploverx@^2.6.0:
+  version "2.6.0"
+  resolved "https://r.cnpmjs.org/ploverx/download/ploverx-2.6.0.tgz#0bb2933e7d2407a81a786594db2e220353a6c5d8"
   dependencies:
     bluebird "~3.4.6"
     fs-extra "~1.0.0"
-    plover "~2.9.0"
+    plover "~2.9.1"
     plover-arttemplate "~3.1.0"
     plover-assets "~2.4.0"
     plover-assets-vendor "~1.0.3"
     plover-benchmark "~1.1.0"
     plover-ejs "~1.1.0"
     plover-logger "~1.4.3"
-    plover-router "~1.1.0"
+    plover-router "~1.2.0"
     plover-web "~1.4.0"
     plover-xview "~1.2.0"
     winston "~2.3.0"

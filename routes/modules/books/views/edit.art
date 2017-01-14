@@ -1,5 +1,10 @@
-<div>
-  <form action="/books/{{book.id}}" method="post">
+{{assets.css('books.css')}}
+
+<div class="container">
+  <div class="page-header">
+    <h1>编辑- {{book.name}}</h1>
+  </div>
+  <form class="edit-form form-horizontal" action="/books/{{book.id}}" method="post">
     {{if errors}}
     <div class="errors">
       <ul>
@@ -9,22 +14,25 @@
       </ul>
     </div>
     {{/if}}
-    <div class="field">
-      <label>
-        名称：
-        <input type="text" name="name" value="{{book.name}}" />
-      </label>
+    <div class="form-group">
+      <label class="col-sm-2 control-label">名称：</label>
+      <div class="col-sm-10">
+        <input class="form-control" type="text" name="name" value="{{book.name}}" />
+      </div>
     </div>
-    <div class="field">
-      <label>
-        价格：
-        <input type="text" name="price" value="{{book.price}}" />
-      </label>
+    <div class="form-group">
+      <label class="col-sm-2 control-label">价格：</label>
+      <div class="col-sm-10">
+        <input class="form-control" type="text" name="price" value="{{book.price}}" />
+      </div>
     </div>
-    <div class="field">
+    <div class="form-group align-center">
       <input type="hidden" name="_csrf" value="{{csrf}}" />
       <input type="hidden" name="_method" value="put" />
-      <input type="submit" value="save!" />
+      <div class="col-sm-2"></div>
+      <div class="col-sm-10">
+        <input class="btn btn-primary" type="submit" value="保存" />
+      </div>
     </div>
   </form>
 </div>

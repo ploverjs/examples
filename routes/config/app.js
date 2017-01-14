@@ -10,7 +10,7 @@ exports.server = {
 
 
 exports.services = {
-  Book: pathUtil.join(__dirname, '../lib/services/Book.js')
+  Book: pathUtil.join(__dirname, '../lib/models/Book.js')
 };
 
 

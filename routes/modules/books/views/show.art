@@ -1,7 +1,17 @@
-<h1>{{book.name}}</h1>
-<div>
-  <dl>
-    <dt>Price：</dt>
-    <dd>{{priceHelper.format(book.price)}}</dd>
-  </dl>
+<div class="container">
+  <ol class="breadcrumb">
+  <li><a href="/books">&lt;&lt;Books</a></li>
+  </ol>
+  <div class="page-header">
+    <h1>
+      {{book.name}}
+      <small><a href="/books/{{book.id}}/edit">编辑</a></small>
+    </h1>
+  </div>
+  <div>
+    <dl class="dl-horizontal">
+      <dt>Price：</dt>
+      <dd>{{priceHelper.format(book.price)}}</dd>
+    </dl>
+  </div>
 </div>

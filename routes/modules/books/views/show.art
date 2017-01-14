@@ -1,8 +1,10 @@
-<a href="/books">Books</a>
-<h1>{{book.name}}</h1>
-<div>
-  <dl>
-    <dt>Price：</dt>
-    <dd>{{priceHelper.format(book.price)}}</dd>
-  </dl>
+<div class="container">
+  <a href="/books">Books</a>
+  <h1>{{book.name}}</h1>
+  <div>
+    <dl>
+      <dt>Price：</dt>
+      <dd>{{priceHelper.format(book.price)}}</dd>
+    </dl>
+  </div>
 </div>

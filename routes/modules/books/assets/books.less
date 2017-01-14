@@ -1,0 +1,25 @@
+.clearfix() {
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+
+.books {
+  max-width: 800px;
+
+  li {
+    .clearfix;
+  }
+
+  .name {
+    float: left;
+    line-height: 30px;
+  }
+
+  .btn-group {
+    float: right;
+  }
+}

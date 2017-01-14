@@ -1,10 +1,20 @@
-<h1>Books</h1>
+{{assets.css('books.css')}}
+{{assets.js('books.js')}}
 
-<ul class="books">
-  {{each books as book}}
-  <li>
-    <a href="/books/{{book.id}}">{{book.name}}</a>
-    <a href="/books/{{book.id}}/edit">编辑</a>
-  </li>
-  {{/each}}
-</ul>
+<div class="container">
+  <h1>Books</h1>
+
+  <ul class="books list-group">
+    {{each books as book}}
+    <li class="list-group-item">
+      <div class="name">
+        <a href="/books/{{book.id}}">{{book.name}}</a>
+      </div>
+      <div class="btn-group btn-group-sm">
+        <a class="btn btn-default" href="/books/{{book.id}}/edit">编辑</a>
+        <a class="btn btn-default" href="/books/{{book.id}}/edit">删除</a>
+      </div>
+    </li>
+    {{/each}}
+  </ul>
+</div>

@@ -35,7 +35,7 @@ exports.edit = function* () {
 
 
 /**
- * PUT /books/
+ * PUT /books/${id}
  */
 exports.update = function* () {
   const id = this.query.id;
@@ -47,3 +47,13 @@ exports.update = function* () {
     this.redirect(`/books/${id}/edit`);
   }
 };
+
+
+/**
+ * DELETE /books/${id}
+ */
+exports.delete = function* () {
+  const id = this.query.id;
+  yield this.Book.delete(id);
+  this.redirect('/books');
+}

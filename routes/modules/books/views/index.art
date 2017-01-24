@@ -12,7 +12,7 @@
       </div>
       <div class="btn-group btn-group-sm">
         <a class="btn btn-default" href="/books/{{book.id}}/edit">编辑</a>
-        <a class="btn btn-default" href="/books/{{book.id}}/edit">删除</a>
+        <a class="btn btn-default"  data-request="delete" href="/books/{{book.id}}">删除</a>
       </div>
     </li>
     {{/each}}

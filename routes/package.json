@@ -4,9 +4,12 @@
   "description": "routes and restful",
   "scripts": {
     "start": "NODE_ENV=production node app.js",
-    "dev": "node app.js"
+    "dev": "node app.js",
+    "build": "rm -rf public/g && plover-build"
   },
   "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1",
     "mz": "^2.6.0",
     "plover-assets-less": "^1.2.1",
     "ploverx": "^2.6.1"

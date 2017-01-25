@@ -16,7 +16,7 @@ exports.get = function* (id) {
   id = parseInt(id, 10);
   const list = yield getDataList();
   return list.find(o => o.id === id);
-}
+};
 
 
 exports.update = function* (id, params) {
@@ -29,7 +29,20 @@ exports.update = function* (id, params) {
     yield updateDataList(list);
   }
   return v;
-}
+};
+
+
+exports.delete = function* (id) {
+  id = parseInt(id, 10);
+  const list = yield getDataList();
+  const index = list.findIndex(o => o.id === id);
+  if (index !== -1) {
+    list.splice(index, 1);
+    yield updateDataList(list);
+    return true;
+  }
+  return false;
+};
 
 
 function* getDataList() {

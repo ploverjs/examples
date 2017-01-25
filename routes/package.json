@@ -12,10 +12,11 @@
     "bootstrap": "^3.3.7",
     "global": "^4.3.1",
     "jquery": "^3.1.1",
+    "less": "^2.7.2",
     "lodash": "^4.17.4",
     "mz": "^2.6.0",
-    "plover-assets-less": "^1.2.1",
-    "ploverx": "^2.6.1",
+    "plover-assets-less": "^2.0.0",
+    "ploverx": "^3.0.0",
     "pm2": "^2.3.0"
   },
   "license": "ISC"

@@ -1,6 +1,3 @@
-const pathUtil = require('path');
-
-
 /**
  * 服务器相关配置
  */
@@ -55,7 +52,7 @@ exports.assets = {
   concatItems: [
     { match: /^\/g\/(.*)$/, prefix: '/g/??' }
   ]
-}
+};
 
 
 /**
@@ -63,6 +60,5 @@ exports.assets = {
  */
 exports.xview = {
   enable: false
-}
-
+};
 

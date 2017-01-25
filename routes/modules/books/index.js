@@ -16,7 +16,7 @@ exports.index = function* () {
 exports.show = function* () {
   const book = yield this.Book.get(this.query.id);
   if (!book) {
-    this.throw(404, `can not find book #{id}`);
+    this.throw(404, `can not find book ${this.query.id}`);
     return;
   }
 
@@ -43,11 +43,10 @@ exports.create = function* () {
   const changeset = this.Book.changeset(null, this.params);
   if (changeset.valid) {
     const book = yield this.Book.save(changeset);
-    console.log(book);
     this.redirect(`/books/${book.id}`);
   } else {
     this.ctx.flash.changeset = changeset;
-    this.redirect(`/books/new`);
+    this.redirect('/books/new');
   }
   this.render();
 };
@@ -90,4 +89,4 @@ exports.delete = function* () {
   const id = this.query.id;
   yield this.Book.delete(id);
   this.redirect('/books');
-}
+};

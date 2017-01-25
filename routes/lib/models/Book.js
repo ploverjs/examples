@@ -28,7 +28,7 @@ exports.save = function* (changeset) {
   const list = yield getDataList();
   if (book.id) {
     const index = list.findIndex(o => o.id === book.id);
-    assert(index >= 0)
+    assert(index >= 0);
     list[index] = book;
   } else {
     const maxId = _.max(list.map(o => o.id));

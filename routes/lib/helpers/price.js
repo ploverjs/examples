@@ -1,3 +1,3 @@
 exports.format = function(price) {
-  return price.toFixed(2) + '元'
+  return price.toFixed(2) + '元';
 };

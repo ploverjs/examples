@@ -26,6 +26,7 @@ exports.web = {
 
 exports.assets = {
   enableMiddleware: true,
+  // urlPrefix: 'https://mycdn.com/routes',
   digest: true,
   vendors: [
     'bootstrap',

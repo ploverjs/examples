@@ -3,17 +3,20 @@
   "version": "1.0.0",
   "description": "routes and restful",
   "scripts": {
-    "start": "NODE_ENV=production node app.js",
-    "dev": "node app.js",
+    "start": "NODE_ENV=production pm2 start app.js --name app",
+    "stop": "pm2 stop all && pm2 delete all",
+    "dev": "pm2 start app.js --no-daemon --watch --name dev",
     "build": "rm -rf public/g && plover-build"
   },
   "dependencies": {
     "bootstrap": "^3.3.7",
+    "global": "^4.3.1",
     "jquery": "^3.1.1",
     "lodash": "^4.17.4",
     "mz": "^2.6.0",
     "plover-assets-less": "^1.2.1",
-    "ploverx": "^2.6.1"
+    "ploverx": "^2.6.1",
+    "pm2": "^2.3.0"
   },
   "license": "ISC"
 }

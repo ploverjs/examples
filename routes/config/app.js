@@ -21,4 +21,15 @@ exports.helpers = {
 
 exports.web = {
   keys: ['99D4ABFE-B032-4D68-A616-F68FADB4BE2F']
-}
+};
+
+
+exports.assets = {
+  enableMiddleware: true,
+  // urlPrefix: 'https://mycdn.com/routes',
+  digest: true,
+  vendors: [
+    'bootstrap',
+    'jquery'
+  ]
+};

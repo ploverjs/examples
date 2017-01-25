@@ -1,7 +1,5 @@
 <div class="container">
-  <ol class="breadcrumb">
-  <li><a href="/books">&lt;&lt;Books</a></li>
-  </ol>
+  {{app.control('elements/breadcrumb')}}
   <div class="page-header">
     <h1>
       {{book.name}}

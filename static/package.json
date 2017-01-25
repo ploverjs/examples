@@ -7,7 +7,7 @@
     "dev": "node app.js"
   },
   "dependencies": {
-    "ploverx": "^2.6.1"
+    "ploverx": "^3.0.0"
   },
   "license": "ISC"
 }

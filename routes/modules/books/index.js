@@ -1,3 +1,6 @@
+const assert = require('assert');
+
+
 /**
  * GET /books
  */
@@ -13,7 +16,7 @@ exports.index = function* () {
 exports.show = function* () {
   const book = yield this.Book.get(this.query.id);
   if (!book) {
-    this.throw(404, `can not find book #{id}`);
+    this.throw(404, `can not find book ${this.query.id}`);
     return;
   }
 
@@ -25,25 +28,65 @@ exports.show = function* () {
 
 
 /**
- * GET /books/${id}/edit
+ * GET /books/new
  */
-exports.edit = function* () {
-  const book = yield this.Book.get(this.query.id);
-  this.layout.data.pageTitle = 'Edit: ' + book.name;
-  this.render({ book, errors: this.ctx.flash.errors });
+exports.new = function() {
+  const { data, errors } = this.ctx.flash.changeset || this.Book.new();
+  this.render({ book: data, errors });
 };
 
 
 /**
- * PUT /books/
+ * POST /books
+ */
+exports.create = function* () {
+  const changeset = this.Book.changeset(null, this.params);
+  if (changeset.valid) {
+    const book = yield this.Book.save(changeset);
+    this.redirect(`/books/${book.id}`);
+  } else {
+    this.ctx.flash.changeset = changeset;
+    this.redirect('/books/new');
+  }
+  this.render();
+};
+
+
+/**
+ * GET /books/${id}/edit
+ */
+exports.edit = function* () {
+  const changeset = this.ctx.flash.changeset || {};
+  const book = changeset.data || (yield this.Book.get(this.query.id));
+
+  this.layout.data.pageTitle = 'Edit: ' + book.name;
+  this.render({ book, errors: changeset.errors });
+};
+
+
+/**
+ * PUT /books/${id}
  */
 exports.update = function* () {
-  const id = this.query.id;
-  const o = yield this.Book.update(id, this.params);
-  if (o.success) {
-    this.redirect(`/books/${id}`);
+  const book = yield this.Book.get(this.query.id);
+  assert(book);
+
+  const changeset = this.Book.changeset(book, this.params);
+  if (changeset.valid) {
+    yield this.Book.save(changeset);
+    this.redirect(`/books/${book.id}`);
   } else {
-    this.ctx.flash.errors = o.errors;
-    this.redirect(`/books/${id}/edit`);
+    this.ctx.flash.changeset = changeset;
+    this.redirect(`/books/${book.id}/edit`);
   }
+};
+
+
+/**
+ * DELETE /books/${id}
+ */
+exports.delete = function* () {
+  const id = this.query.id;
+  yield this.Book.delete(id);
+  this.redirect('/books');
 };

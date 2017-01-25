@@ -142,7 +142,7 @@ cycle@1.0.x:
   version "1.0.3"
   resolved "https://r.cnpmjs.org/cycle/download/cycle-1.0.3.tgz#21e80b2be8580f98b468f379430662b046c34ad2"
 
-debug@*, debug@^2.2.0:
+debug@*, debug@^2.2.0, debug@~2.6.0:
   version "2.6.0"
   resolved "https://r.cnpmjs.org/debug/download/debug-2.6.0.tgz#bc596bcabe7617f11d9fa15361eded5608b8499b"
   dependencies:
@@ -222,44 +222,18 @@ fresh@^0.3.0:
   version "0.3.0"
   resolved "https://r.cnpmjs.org/fresh/download/fresh-0.3.0.tgz#651f838e22424e7566de161d8358caa199f83d4f"
 
-fs-extra@~0.30.0:
-  version "0.30.0"
-  resolved "https://r.cnpmjs.org/fs-extra/download/fs-extra-0.30.0.tgz#f233ffcc08d4da7d432daa449776989db1df93f0"
+fs-extra@~2.0.0:
+  version "2.0.0"
+  resolved "https://r.cnpmjs.org/fs-extra/download/fs-extra-2.0.0.tgz#337352bded4a0b714f3eb84de8cea765e9d37600"
   dependencies:
     graceful-fs "^4.1.2"
     jsonfile "^2.1.0"
-    klaw "^1.0.0"
-    path-is-absolute "^1.0.0"
-    rimraf "^2.2.8"
-
-fs-extra@~1.0.0:
-  version "1.0.0"
-  resolved "https://r.cnpmjs.org/fs-extra/download/fs-extra-1.0.0.tgz#cd3ce5f7e7cb6145883fcae3191e9877f8587950"
-  dependencies:
-    graceful-fs "^4.1.2"
-    jsonfile "^2.1.0"
-    klaw "^1.0.0"
-
-fs.realpath@^1.0.0:
-  version "1.0.0"
-  resolved "https://r.cnpmjs.org/fs.realpath/download/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
 
 get-ready@~1.0.0:
   version "1.0.0"
   resolved "https://r.cnpmjs.org/get-ready/download/get-ready-1.0.0.tgz#f91817f1e9adecfea13a562adfc8de883ab34782"
 
-glob@^7.0.5:
-  version "7.1.1"
-  resolved "https://r.cnpmjs.org/glob/download/glob-7.1.1.tgz#805211df04faaf1c63a3600306cdf5ade50b2ec8"
-  dependencies:
-    fs.realpath "^1.0.0"
-    inflight "^1.0.4"
-    inherits "2"
-    minimatch "^3.0.2"
-    once "^1.3.0"
-    path-is-absolute "^1.0.0"
-
-graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.1.9:
+graceful-fs@^4.1.2, graceful-fs@^4.1.6:
   version "4.1.11"
   resolved "https://r.cnpmjs.org/graceful-fs/download/graceful-fs-4.1.11.tgz#0e8bdfe4d1ddb8854d64e04ea7c00e2a026e5658"
 
@@ -312,20 +286,13 @@ inflection@~1.10.0:
   version "1.10.0"
   resolved "https://r.cnpmjs.org/inflection/download/inflection-1.10.0.tgz#5bffcb1197ad3e81050f8e17e21668087ee9eb2f"
 
-inflight@^1.0.4:
-  version "1.0.6"
-  resolved "https://r.cnpmjs.org/inflight/download/inflight-1.0.6.tgz#49bd6331d7d02d0c09bc910a1075ba8165b56df9"
-  dependencies:
-    once "^1.3.0"
-    wrappy "1"
-
-inherits@2, inherits@2.0.3:
-  version "2.0.3"
-  resolved "https://r.cnpmjs.org/inherits/download/inherits-2.0.3.tgz#633c2c83e3da42a502f52466022480f4208261de"
-
 inherits@2.0.1:
   version "2.0.1"
   resolved "https://r.cnpmjs.org/inherits/download/inherits-2.0.1.tgz#b17d08d326b4423e568eff719f91b0b1cbdf69f1"
+
+inherits@2.0.3:
+  version "2.0.3"
+  resolved "https://r.cnpmjs.org/inherits/download/inherits-2.0.3.tgz#633c2c83e3da42a502f52466022480f4208261de"
 
 is-class@~0.0.3:
   version "0.0.4"
@@ -360,12 +327,6 @@ jsonp-body@~1.0.0:
 keygrip@~1.0.1:
   version "1.0.1"
   resolved "https://r.cnpmjs.org/keygrip/download/keygrip-1.0.1.tgz#b02fa4816eef21a8c4b35ca9e52921ffc89a30e9"
-
-klaw@^1.0.0:
-  version "1.3.1"
-  resolved "https://r.cnpmjs.org/klaw/download/klaw-1.3.1.tgz#4088433b46b3b1ba259d78785d8e96f73ba02439"
-  optionalDependencies:
-    graceful-fs "^4.1.9"
 
 koa-bodyparser@~2.3.0:
   version "2.3.0"
@@ -497,9 +458,9 @@ koa@~1.2.4:
     type-is "^1.5.5"
     vary "^1.0.0"
 
-lodash@~4.16.4:
-  version "4.16.6"
-  resolved "https://r.cnpmjs.org/lodash/download/lodash-4.16.6.tgz#d22c9ac660288f3843e16ba7d2b5d06cca27d777"
+lodash@~4.17.4:
+  version "4.17.4"
+  resolved "https://r.cnpmjs.org/lodash/download/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
 
 media-typer@0.3.0:
   version "0.3.0"
@@ -515,7 +476,7 @@ mime-types@^2.0.7, mime-types@~2.1.11, mime-types@~2.1.13:
   dependencies:
     mime-db "~1.25.0"
 
-minimatch@^3.0.2, minimatch@~3.0.0:
+minimatch@~3.0.0:
   version "3.0.3"
   resolved "https://r.cnpmjs.org/minimatch/download/minimatch-3.0.3.tgz#2a4e4090b96b2db06a9d7df01055a62a77c9b774"
   dependencies:
@@ -529,17 +490,9 @@ ms@0.7.2:
   version "0.7.2"
   resolved "https://r.cnpmjs.org/ms/download/ms-0.7.2.tgz#ae25cf2512b3885a1d95d7f037868d8431124765"
 
-mz@^2.0.0, mz@^2.1.0, mz@^2.3.1, mz@2:
+mz@^2.0.0, mz@^2.1.0, mz@^2.3.1, mz@~2.6.0, mz@2:
   version "2.6.0"
   resolved "https://r.cnpmjs.org/mz/download/mz-2.6.0.tgz#c8b8521d958df0a4f2768025db69c719ee4ef1ce"
-  dependencies:
-    any-promise "^1.0.0"
-    object-assign "^4.0.1"
-    thenify-all "^1.0.0"
-
-mz@~2.4.0:
-  version "2.4.0"
-  resolved "https://r.cnpmjs.org/mz/download/mz-2.4.0.tgz#987ba9624d89395388c37cb4741e2caf4dd13b1a"
   dependencies:
     any-promise "^1.0.0"
     object-assign "^4.0.1"
@@ -571,12 +524,6 @@ on-finished@^2.1.0:
   dependencies:
     ee-first "1.1.1"
 
-once@^1.3.0:
-  version "1.4.0"
-  resolved "https://r.cnpmjs.org/once/download/once-1.4.0.tgz#583b1aa775961d4b113ac17d9c50baef9dd76bd1"
-  dependencies:
-    wrappy "1"
-
 once@~1.3.2:
   version "1.3.3"
   resolved "https://r.cnpmjs.org/once/download/once-1.3.3.tgz#b2e261557ce4c314ec8304f3fa82663e4297ca20"
@@ -595,7 +542,7 @@ parseurl@^1.3.0, parseurl@~1.3.1:
   version "1.3.1"
   resolved "https://r.cnpmjs.org/parseurl/download/parseurl-1.3.1.tgz#c8ab8c9223ba34888aa64a297b28853bec18da56"
 
-path-is-absolute@^1.0.0, path-is-absolute@1.0.1:
+path-is-absolute@1.0.1:
   version "1.0.1"
   resolved "https://r.cnpmjs.org/path-is-absolute/download/path-is-absolute-1.0.1.tgz#174b9268735534ffbc7ace6bf53a5a9e1b5c5f5f"
 
@@ -626,31 +573,25 @@ plover-assets-util@~1.4.0:
     debug "~2.2.0"
     minimatch "~3.0.0"
 
-plover-assets-vendor@~1.0.3:
-  version "1.0.5"
-  resolved "https://r.cnpmjs.org/plover-assets-vendor/download/plover-assets-vendor-1.0.5.tgz#748e9bbb2b0b3abf44909ff4ea5192037f01cd54"
-  dependencies:
-    debug "~2.2.0"
-    resolve-from "~2.0.0"
-
-plover-assets@~2.4.0:
-  version "2.4.0"
-  resolved "https://r.cnpmjs.org/plover-assets/download/plover-assets-2.4.0.tgz#8a52b8cc596c5800575f90a73539382b1ba2294a"
+plover-assets@~3.0.0:
+  version "3.0.0"
+  resolved "https://r.cnpmjs.org/plover-assets/download/plover-assets-3.0.0.tgz#5499ed8c92bd6b611d63a12dd2e3c013dcf6e7cf"
   dependencies:
     co "~4.6.0"
     commander "~2.9.0"
     create-tag "~0.2.0"
-    debug "~2.2.0"
-    fs-extra "~0.30.0"
+    debug "~2.6.0"
+    fs-extra "~2.0.0"
     is-type-of "~1.0.0"
     koa-sendfile "~2.0.0"
-    lodash "~4.16.4"
+    lodash "~4.17.4"
     minimatch "~3.0.0"
-    mz "~2.4.0"
+    mz "~2.6.0"
     plover-assets-util "~1.4.0"
     plover-logger "~1.4.0"
     plover-module-resolver "~1.6.5"
     plover-util "~1.5.1"
+    resolve-from "^2.0.0"
 
 plover-benchmark@~1.1.0:
   version "1.1.0"
@@ -691,9 +632,9 @@ plover-util@~1.5.1:
   dependencies:
     is-type-of "~1.0.0"
 
-plover-web@~1.5.0:
-  version "1.5.0"
-  resolved "https://r.cnpmjs.org/plover-web/download/plover-web-1.5.0.tgz#6ab7667598cbf0b519ff27250c99ba192435b0b2"
+plover-web@~1.5.1:
+  version "1.5.1"
+  resolved "https://r.cnpmjs.org/plover-web/download/plover-web-1.5.1.tgz#d7bf58de0905ff01a4b01f66330e781c4a8e8fda"
   dependencies:
     debug "~2.3.2"
     iconv-lite "~0.4.13"
@@ -742,21 +683,20 @@ plover@~2.9.1:
     ready-callback "~1.0.0"
     resolve-from "~2.0.0"
 
-ploverx@^2.6.1:
-  version "2.6.1"
-  resolved "https://r.cnpmjs.org/ploverx/download/ploverx-2.6.1.tgz#6f485dc9a420f6360aca9809a173833c0c209715"
+ploverx@^3.0.0:
+  version "3.0.0"
+  resolved "https://r.cnpmjs.org/ploverx/download/ploverx-3.0.0.tgz#588327c10023ae0b06ead9b7702db44fa1f381c4"
   dependencies:
     bluebird "~3.4.6"
-    fs-extra "~1.0.0"
+    fs-extra "~2.0.0"
     plover "~2.9.1"
     plover-arttemplate "~3.1.0"
-    plover-assets "~2.4.0"
-    plover-assets-vendor "~1.0.3"
+    plover-assets "~3.0.0"
     plover-benchmark "~1.1.0"
     plover-ejs "~1.1.0"
     plover-logger "~1.4.3"
     plover-router "~1.2.0"
-    plover-web "~1.5.0"
+    plover-web "~1.5.1"
     plover-xview "~1.2.0"
     winston "~2.3.0"
 
@@ -806,7 +746,7 @@ redis@~2.6.3:
     redis-commands "^1.2.0"
     redis-parser "^2.0.0"
 
-resolve-from@~2.0.0:
+resolve-from@^2.0.0, resolve-from@~2.0.0:
   version "2.0.0"
   resolved "https://r.cnpmjs.org/resolve-from/download/resolve-from-2.0.0.tgz#9480ab20e94ffa1d9e80a804c7ea147611966b57"
 
@@ -816,12 +756,6 @@ resolve-path@^1.3.1:
   dependencies:
     http-errors "~1.5.0"
     path-is-absolute "1.0.1"
-
-rimraf@^2.2.8:
-  version "2.5.4"
-  resolved "https://r.cnpmjs.org/rimraf/download/rimraf-2.5.4.tgz#96800093cbf1a0c86bd95b4625467535c29dfa04"
-  dependencies:
-    glob "^7.0.5"
 
 rndm@1.2.0:
   version "1.2.0"

@@ -1,6 +1,7 @@
 {{assets.css('books.css')}}
 
 <div class="container">
+  {{app.control('elements/breadcrumb')}}
   <div class="page-header">
     <h1>编辑- {{book.name}}</h1>
   </div>

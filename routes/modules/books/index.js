@@ -48,7 +48,6 @@ exports.create = function* () {
     this.ctx.flash.changeset = changeset;
     this.redirect('/books/new');
   }
-  this.render();
 };
 
 

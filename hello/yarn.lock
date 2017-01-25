@@ -683,9 +683,9 @@ plover@~2.9.1:
     ready-callback "~1.0.0"
     resolve-from "~2.0.0"
 
-ploverx@^3.0.0:
-  version "3.0.0"
-  resolved "https://r.cnpmjs.org/ploverx/download/ploverx-3.0.0.tgz#588327c10023ae0b06ead9b7702db44fa1f381c4"
+ploverx@^3.1.0:
+  version "3.1.0"
+  resolved "https://r.cnpmjs.org/ploverx/download/ploverx-3.1.0.tgz#05198fb837ac1b39493b2d13fd9c7606ad13f7ab"
   dependencies:
     bluebird "~3.4.6"
     fs-extra "~2.0.0"

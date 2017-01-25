@@ -10,6 +10,7 @@
   "dependencies": {
     "bootstrap": "^3.3.7",
     "jquery": "^3.1.1",
+    "lodash": "^4.17.4",
     "mz": "^2.6.0",
     "plover-assets-less": "^1.2.1",
     "ploverx": "^2.6.1"

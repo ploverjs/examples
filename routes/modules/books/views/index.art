@@ -3,7 +3,7 @@
 
 <div class="container">
   <h1>Books</h1>
-
+  <a href="/books/new" class="new-btn btn btn-primary">添加</a>
   <ul class="books list-group">
     {{each books as book}}
     <li class="list-group-item">

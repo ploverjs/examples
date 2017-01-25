@@ -745,6 +745,10 @@ less@~2.7.0:
     request "^2.72.0"
     source-map "^0.5.3"
 
+lodash:
+  version "4.17.4"
+  resolved "https://r.cnpmjs.org/lodash/download/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
+
 lodash@~4.16.4:
   version "4.16.6"
   resolved "https://r.cnpmjs.org/lodash/download/lodash-4.16.6.tgz#d22c9ac660288f3843e16ba7d2b5d06cca27d777"

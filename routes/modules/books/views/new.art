@@ -3,7 +3,8 @@
 <div class="container">
   {{app.control('elements/breadcrumb')}}
   <div class="page-header">
-    <h1>编辑- {{book.name}}</h1>
+    <h1>新建</h1>
   </div>
-  {{app.control('elements/form', { type: 'update' })}}
+  {{app.control('elements/form', { type: 'create' })}}
 </div>
+

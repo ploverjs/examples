@@ -1,3 +1,6 @@
+const assert = require('assert');
+
+
 /**
  * GET /books
  */
@@ -25,12 +28,40 @@ exports.show = function* () {
 
 
 /**
+ * GET /books/new
+ */
+exports.new = function() {
+  const { data, errors } = this.ctx.flash.changeset || this.Book.new();
+  this.render({ book: data, errors });
+};
+
+
+/**
+ * POST /books
+ */
+exports.create = function* () {
+  const changeset = this.Book.changeset(null, this.params);
+  if (changeset.valid) {
+    const book = yield this.Book.save(changeset);
+    console.log(book);
+    this.redirect(`/books/${book.id}`);
+  } else {
+    this.ctx.flash.changeset = changeset;
+    this.redirect(`/books/new`);
+  }
+  this.render();
+};
+
+
+/**
  * GET /books/${id}/edit
  */
 exports.edit = function* () {
-  const book = yield this.Book.get(this.query.id);
+  const changeset = this.ctx.flash.changeset || {};
+  const book = changeset.data || (yield this.Book.get(this.query.id));
+
   this.layout.data.pageTitle = 'Edit: ' + book.name;
-  this.render({ book, errors: this.ctx.flash.errors });
+  this.render({ book, errors: changeset.errors });
 };
 
 
@@ -38,13 +69,16 @@ exports.edit = function* () {
  * PUT /books/${id}
  */
 exports.update = function* () {
-  const id = this.query.id;
-  const o = yield this.Book.update(id, this.params);
-  if (o.success) {
-    this.redirect(`/books/${id}`);
+  const book = yield this.Book.get(this.query.id);
+  assert(book);
+
+  const changeset = this.Book.changeset(book, this.params);
+  if (changeset.valid) {
+    yield this.Book.save(changeset);
+    this.redirect(`/books/${book.id}`);
   } else {
-    this.ctx.flash.errors = o.errors;
-    this.redirect(`/books/${id}/edit`);
+    this.ctx.flash.changeset = changeset;
+    this.redirect(`/books/${book.id}/edit`);
   }
 };
 

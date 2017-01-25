@@ -8,7 +8,7 @@
     {{assets.css('bootstrap:css/bootstrap.css')}}
     {{assets.cssTag()}}
   </head>
-  <body>
+  <body class="page-{{pageName}}">
     {{content}}
     {{assets.js('jquery:jquery.min.js')}}
     {{assets.jsTag()}}

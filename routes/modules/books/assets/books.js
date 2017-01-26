@@ -1,4 +1,8 @@
-(function($) {
+/**
+ * @webpack.entry
+ */
+
+import $ from 'jquery'
 
 
 $(ready);
@@ -23,12 +27,12 @@ function handleDeleteLink() {
 
 
 function request(url, data) {
-  var form = $('<form>');
+  const form = $('<form>');
   form.attr('method', 'post')
     .attr('action', url);
 
-  var field = function(name, value) {
-    var input = $('<input type="hidden" />');
+  const field = function(name, value) {
+    const input = $('<input type="hidden" />');
     input.attr('name', name);
     input.val(value);
     form.append(input);
@@ -36,7 +40,7 @@ function request(url, data) {
 
   field('_csrf', csrf());
 
-  for (var name in data) {
+  for (const name in data) {
     field(name, data[name]);
   }
 
@@ -47,6 +51,3 @@ function request(url, data) {
 function csrf() {
   return $('head meta[name=x-csrf]').attr('content');
 }
-
-
-})(jQuery);

@@ -5,7 +5,7 @@
   "scripts": {
     "start": "NODE_ENV=production pm2 start app.js --name app",
     "stop": "pm2 stop all && pm2 delete all",
-    "dev": "pm2 start app.js --no-daemon --watch --name dev",
+    "dev": "pm2 start app.js --no-daemon --watch --ignore-watch tmp/ --name dev",
     "build": "rm -rf public/g && plover-build"
   },
   "dependencies": {
@@ -16,7 +16,7 @@
     "lodash": "^4.17.4",
     "mz": "^2.6.0",
     "plover-assets-less": "^2.0.0",
-    "plover-assets-webpack": "^1.2.1",
+    "plover-assets-webpack": "^2.0.0",
     "ploverx": "^3.1.0",
     "pm2": "^2.3.0",
     "babel-core": "^6.22.1",

@@ -1,9 +1,14 @@
 const pathUtil = require('path');
+const webpack = require('webpack');
 
 
 module.exports = {
   module: {
     loaders: [
+      {
+        test: /\.scss/,
+        loader: 'style-loader!css-loader!postcss-loader!sass-loader?outputStyle=expanded'
+      },
       {
         test: /\.js$/,
         loader: 'babel-loader',
@@ -12,7 +17,18 @@ module.exports = {
         }
       }
     ]
-  }
+  },
+
+
+  plugins: [
+    new webpack.LoaderOptionsPlugin({
+      options: {
+        postcss: function () {
+          return [];
+        }
+      }
+    })
+  ]
 };
 
 

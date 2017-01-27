@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "description": "routes and restful with react",
   "scripts": {
-    "start": "NODE_ENV=production pm2 start app.js --name app",
-    "stop": "pm2 stop all && pm2 delete all",
-    "dev": "pm2 start app.js --no-daemon --watch --ignore-watch tmp/ --name dev",
+    "start": "NODE_ENV=production node app.js",
+    "dev": "node app.js",
     "build": "rm -rf public/g && plover-build"
   },
   "dependencies": {
@@ -21,11 +20,19 @@
     "mz": "^2.6.0",
     "plover-assets-less": "^2.0.0",
     "plover-assets-webpack": "^2.0.0",
-    "ploverx": "^3.1.0",
+    "ploverx": "^3.2.0",
     "pm2": "^2.3.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "webpack": "^2.2.0"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^0.26.1",
+    "node-sass": "^4.3.0",
+    "postcss-loader": "^1.2.2",
+    "sass-loader": "^4.1.1",
+    "scss-loader": "^0.0.1",
+    "style-loader": "^0.13.1"
+  }
 }

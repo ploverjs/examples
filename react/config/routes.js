@@ -1,6 +1,8 @@
-module.exports = ({ get, resources }) => {
-  get('/', 'books:index');
+module.exports = ({ get, namespace, resources }) => {
+  get('/', 'books:app');
 
-  resources('books');
+  namespace('api', { type: 'json' }, () => {
+    resources('books');
+  });
 };
 

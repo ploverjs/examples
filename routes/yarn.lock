@@ -2362,14 +2362,6 @@ mz@~2.4.0:
     object-assign "^4.0.1"
     thenify-all "^1.0.0"
 
-mz@~2.5.0:
-  version "2.5.0"
-  resolved "https://r.cnpmjs.org/mz/download/mz-2.5.0.tgz#2859025df03d46b57bb317174b196477ce64cec1"
-  dependencies:
-    any-promise "^1.0.0"
-    object-assign "^4.0.1"
-    thenify-all "^1.0.0"
-
 nan@^2.3.0, nan@^2.3.4:
   version "2.5.1"
   resolved "https://r.cnpmjs.org/nan/download/nan-2.5.1.tgz#d5b01691253326a97a2bbee9e61c55d8d60351e2"
@@ -2700,9 +2692,9 @@ plover-module-resolver@~1.6.5:
     resolve-from "~2.0.0"
     semver "~5.3.0"
 
-plover-router@~1.2.0:
-  version "1.2.0"
-  resolved "https://r.cnpmjs.org/plover-router/download/plover-router-1.2.0.tgz#065ab7f71e05e9449c8342213209f41e2b2402db"
+plover-router@~1.4.0:
+  version "1.4.0"
+  resolved "https://r.cnpmjs.org/plover-router/download/plover-router-1.4.0.tgz#ca9b6f737d23152b03811233c6c03528ac72e58a"
   dependencies:
     inflection "~1.10.0"
 
@@ -2733,7 +2725,7 @@ plover-web@~1.5.1:
     plover-logger "~1.4.0"
     qs "~6.3.0"
 
-plover-xview@~1.2.0:
+plover-xview@~1.2.1:
   version "1.2.1"
   resolved "https://r.cnpmjs.org/plover-xview/download/plover-xview-1.2.1.tgz#da666d0d3490e4ce13ce07b446cda01b9874f479"
   dependencies:
@@ -2741,9 +2733,9 @@ plover-xview@~1.2.0:
     escape-html "~1.0.3"
     plover-util "~1.5.1"
 
-plover@~2.9.1:
-  version "2.9.1"
-  resolved "https://r.cnpmjs.org/plover/download/plover-2.9.1.tgz#4c6f4a90934a3de87692de6d91e02a4b4deb88ad"
+plover@~2.10.0:
+  version "2.10.0"
+  resolved "https://r.cnpmjs.org/plover/download/plover-2.10.0.tgz#dcb381ea060fc86a3cb4f6c2c5571e100e5d762a"
   dependencies:
     antsort "~1.1.2"
     co "~4.6.0"
@@ -2754,7 +2746,7 @@ plover@~2.9.1:
     jsonp-body "~1.0.0"
     koa "~1.2.4"
     koa-compose "~2.5.1"
-    mz "~2.5.0"
+    mz "~2.6.0"
     output-formatter "~1.0.1"
     path-to-regexp "~1.2.1"
     plover-logger "~1.4.0"
@@ -2763,21 +2755,21 @@ plover@~2.9.1:
     ready-callback "~1.0.0"
     resolve-from "~2.0.0"
 
-ploverx@^3.1.0:
-  version "3.1.0"
-  resolved "https://r.cnpmjs.org/ploverx/download/ploverx-3.1.0.tgz#05198fb837ac1b39493b2d13fd9c7606ad13f7ab"
+ploverx@^3.2.0:
+  version "3.2.0"
+  resolved "https://r.cnpmjs.org/ploverx/download/ploverx-3.2.0.tgz#d2ccb361308e618ee3e231fa922952e9a5d4110e"
   dependencies:
     bluebird "~3.4.6"
     fs-extra "~2.0.0"
-    plover "~2.9.1"
+    plover "~2.10.0"
     plover-arttemplate "~3.1.0"
     plover-assets "~3.0.0"
     plover-benchmark "~1.1.0"
     plover-ejs "~1.1.0"
     plover-logger "~1.4.3"
-    plover-router "~1.2.0"
+    plover-router "~1.4.0"
     plover-web "~1.5.1"
-    plover-xview "~1.2.0"
+    plover-xview "~1.2.1"
     winston "~2.3.0"
 
 pm2-axon-rpc@0.4.5:

@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "routes and restful with react",
   "scripts": {
+    "start": "NODE_ENV=production node app.js",
     "dev": "pm2 start app.js --no-daemon --watch=lib --watch=modules --ignore-watch=modules/*/assets/*.* --name dev",
+    "stop": "pm2 stop dev && pm2 delete dev",
     "build": "rm -rf public/g && plover-build"
   },
   "dependencies": {

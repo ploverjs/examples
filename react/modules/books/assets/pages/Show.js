@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router';
-import BreadCrumb from './BreadCrumb';
-import ajax from './ajax';
-import withFetcher from './withFetcher';
+import ajax from '../util/ajax';
+import withFetcher from '../util/withFetcher';
+import BreadCrumb from '../components/BreadCrumb';
 
 
 const Show = ({ book }) => (
@@ -11,7 +11,7 @@ const Show = ({ book }) => (
     <div className="page-header">
       <h1>
         {book.name}
-        <small><Link to={`/books/{book.id}/edit`}>编辑</Link></small>
+        <small><Link to={`/books/${book.id}/edit`}>编辑</Link></small>
       </h1>
     </div>
     <div>

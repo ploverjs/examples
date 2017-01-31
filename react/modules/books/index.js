@@ -16,3 +16,12 @@ exports.index = function* () {
   this.render(books);
 };
 
+
+/**
+ * GET /api/books/${id}
+ */
+exports.show = function* () {
+  const book = yield this.Book.get(this.query.id);
+  this.render(book);
+};
+

@@ -2,10 +2,13 @@ import qs from 'query-string';
 
 
 export default function ajax(url, options) {
-  const opts = Object.assign({}, options);
+  const opts = Object.assign({
+    credentials: 'include'
+  }, options);
+
   opts.data = Object.assign({}, opts.data);
 
-  const { method = 'GET' } = opts;
+  const { method } = opts;
   const csrf = getCsrf();
 
   if (['POST', 'PUT'].indexOf(method) !== -1) {
@@ -14,7 +17,7 @@ export default function ajax(url, options) {
     url = withQuery(url, { _csrf: csrf });
   }
 
-  return window.fetch(url, options)
+  return window.fetch(url, opts)
     .then(res => res.json())
     .catch(e => {
       console.error(e);

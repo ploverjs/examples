@@ -34,7 +34,7 @@ function tryDelete(id, reload) {
   }
 
   ajax(`/api/books/${id}`, {
-    method: 'DELETE'
+    method: 'DELETE',
   }).then(() => {
     reload();
   });

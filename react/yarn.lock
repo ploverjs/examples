@@ -3678,7 +3678,7 @@ qs@~6.3.0:
   version "6.3.0"
   resolved "https://r.cnpmjs.org/qs/download/qs-6.3.0.tgz#f403b264f23bc01228c74131b407f18d5ea5d442"
 
-query-string@^4.1.0, query-string@^4.2.2:
+query-string, query-string@^4.1.0, query-string@^4.2.2:
   version "4.3.1"
   resolved "https://r.cnpmjs.org/query-string/download/query-string-4.3.1.tgz#54baada6713eafc92be75c47a731f2ebd09cd11d"
   dependencies:

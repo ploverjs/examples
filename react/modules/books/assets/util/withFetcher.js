@@ -10,19 +10,25 @@ export default function withFetcher(Base, fetcher) {
       };
     }
 
+
     componentDidMount() {
-      fetcher(this.props).then(data => {
+      this.reload();
+    }
+
+
+    reload(props) {
+      props = Object.assign({}, this.props, props);
+      fetcher(props).then(data => {
         this.setState({ data });
-      }).catch(e => {
-        console.error(e);
       });
     }
+
 
     render() {
       const { data } = this.state;
       return (
         data ?
-        <Base {...data} {...this.props} /> :
+        <Base {...data} {...this.props} reload={this.reload.bind(this)} /> :
         <div className="loading">正在加载...</div>
       );
     }

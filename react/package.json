@@ -4,7 +4,7 @@
   "description": "routes and restful with react",
   "scripts": {
     "start": "NODE_ENV=production node app.js",
-    "dev": "pm2 start app.js --no-daemon --watch=lib --watch=modules --ignore-watch=modules/*/assets/*.* --name dev",
+    "dev": "pm2 start app.js --no-daemon --watch=lib --watch=modules --ignore-watch=modules/*/assets/**/*.* --name dev",
     "stop": "pm2 stop dev && pm2 delete dev",
     "build": "rm -rf public/g && plover-build"
   },
@@ -23,6 +23,7 @@
     "plover-assets-webpack": "^2.0.0",
     "ploverx": "^3.2.0",
     "pm2": "^2.3.0",
+    "query-string": "^4.3.1",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-router": "^3.0.2",

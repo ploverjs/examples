@@ -25,3 +25,10 @@ exports.show = function* () {
   this.render(book);
 };
 
+
+/**
+ * DELETE /api/books/${id}
+ */
+exports.delete = function* () {
+  this.render({ success: true });
+};

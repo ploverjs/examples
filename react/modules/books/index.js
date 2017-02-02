@@ -30,5 +30,7 @@ exports.show = function* () {
  * DELETE /api/books/${id}
  */
 exports.delete = function* () {
+  const id = this.query.id;
+  yield this.Book.delete(id);
   this.render({ success: true });
 };

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 
 
 export default function formCreator(Form) {
@@ -12,7 +12,7 @@ export default function formCreator(Form) {
     constructor(props) {
       super(props);
       this.state = {
-        formData: Object.assign({}, props.formData);
+        formData: Object.assign({}, props.formData)
       };
     }
 
@@ -40,4 +40,6 @@ export default function formCreator(Form) {
       );
     }
   }
+
+  return FormWrapper;
 }

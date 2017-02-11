@@ -35,7 +35,7 @@ export default function formCreator(Form) {
       };
 
       return (
-        <Form formData={this.state.formData}
+        <Form {...this.props} formData={this.state.formData}
             updater={updater} onSubmit={::this.onSubmit} />
       );
     }

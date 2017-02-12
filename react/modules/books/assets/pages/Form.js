@@ -43,7 +43,7 @@ let New = ({ router }) => {
       data: data
     }).then(o => {
       if (o.success) {
-        router.push(`/books/${o.id}`);
+        router.push(`/books/${o.book.id}`);
       }
     });
   };

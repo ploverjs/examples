@@ -30,6 +30,20 @@ exports.show = function* () {
 
 
 /**
+ * POST /api/books
+ */
+exports.create = function* () {
+  const changeset = this.Book.changeset(null, this.params);
+  if (changeset.valid) {
+    const book = yield this.Book.save(changeset);
+    this.render({ success: true, book: book });
+  } else {
+    this.render({ success: false, errors: changeset.errors });
+  }
+}
+
+
+/**
  * PUT /api/books/${id}
  */
 exports.update = function* () {

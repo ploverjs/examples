@@ -8,7 +8,7 @@ import withFetcher from '../util/withFetcher';
 const Index = ({ books, reload }) => (
   <div className="container">
     <h1>Books</h1>
-    <a className="new-btn btn btn-primary">添加</a>
+    <Link to="/books/new" className="new-btn btn btn-primary" href>添加</Link>
     <ul className="books list-group">
     {
       books.map(book => (

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { withRouter } from 'react-router';
 import ajax from '../util/ajax';
 import withFetcher from '../util/withFetcher';
@@ -6,7 +6,7 @@ import formCreator from '../util/formCreator';
 import BreadCrumb from '../components/BreadCrumb';
 
 
-const Edit = ({ book, router }) => {
+let Edit = ({ book, router }) => {
   const onSubmit = (data) => {
     const { id } = book;
     ajax(`/api/books/${id}`, {
@@ -30,6 +30,42 @@ const Edit = ({ book, router }) => {
   );
 };
 
+
+Edit = withFetcher(withRouter(Edit), ({ params }) => {
+  return ajax(`/api/books/${params.id}`).then(book => ({ book }));
+});
+
+
+let New = ({ router }) => {
+  const onSubmit = (data) => {
+    ajax('/api/books', {
+      method: 'POST',
+      data: data
+    }).then(o => {
+      if (o.success) {
+        router.push(`/books/${o.id}`);
+      }
+    });
+  };
+
+  const book = { name: '我是一本书', price: 0 };
+  return (
+    <div className="container">
+      <BreadCrumb />
+      <div className="page-header">
+        <h1>新建</h1>
+      </div>
+      <Form formData={book} validate={validate} onSubmit={onSubmit} />
+    </div>
+  );
+};
+
+New = withRouter(New);
+
+export { New, Edit };
+
+
+// private
 
 const validate = (data) => {
   const errors = {};
@@ -80,8 +116,3 @@ const Error = ({ message }) => {
   }
   return null;
 };
-
-
-export default withFetcher(withRouter(Edit), ({ params }) => {
-  return ajax(`/api/books/${params.id}`).then(book => ({ book }));
-});

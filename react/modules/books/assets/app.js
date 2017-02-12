@@ -9,7 +9,7 @@ import domready from 'domready';
 
 import Index from './pages/Index';
 import Show from './pages/Show';
-import Edit from './pages/Edit';
+import { New, Edit } from './pages/Form';
 
 
 import './app.scss';
@@ -26,6 +26,7 @@ const Routers = (
     <Route path="/" component={App}>
       <IndexRoute component={Index} />
       <Route path="/books" component={Index} />
+      <Route path="/books/new" component={New} />
       <Route path="/books/:id" component={Show} />
       <Route path="/books/:id/edit" component={Edit} />
     </Route>

@@ -2,7 +2,7 @@
  * @webpack.entry
  */
 
-import $ from 'jquery'
+import $ from 'jquery';
 
 
 $(ready);

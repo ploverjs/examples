@@ -6,13 +6,17 @@ export default function ajax(url, options) {
     credentials: 'include'
   }, options);
 
-  opts.data = Object.assign({}, opts.data);
+  const body = Object.assign({}, opts.data);
 
   const { method } = opts;
   const csrf = getCsrf();
 
   if (['POST', 'PUT'].indexOf(method) !== -1) {
-    opts.data._csrf = csrf;
+    body._csrf = csrf;
+    opts.body = JSON.stringify(body);
+    opts.headers = Object.assign({
+      'Content-Type': 'application/json'
+    }, opts.headers);
   } else if (method === 'DELETE') {
     url = withQuery(url, { _csrf: csrf });
   }

@@ -1,3 +1,6 @@
+const assert = require('assert');
+
+
 /**
  * GET /
  * GET /books
@@ -23,6 +26,22 @@ exports.index = function* () {
 exports.show = function* () {
   const book = yield this.Book.get(this.query.id);
   this.render(book);
+};
+
+
+/**
+ * PUT /api/books/${id}
+ */
+exports.update = function* () {
+  const book = yield this.Book.get(this.query.id);
+  assert(book);
+  const changeset = this.Book.changeset(book, this.params);
+  if (changeset.valid) {
+    yield this.Book.save(changeset);
+    this.render({ success: true });
+  } else {
+    this.render({ success: false, errors: changeset.errors });
+  }
 };
 
 

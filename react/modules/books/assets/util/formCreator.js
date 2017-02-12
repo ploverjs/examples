@@ -12,15 +12,18 @@ export default function formCreator(Form) {
     constructor(props) {
       super(props);
       this.state = {
-        formData: Object.assign({}, props.formData)
+        formData: Object.assign({}, props.formData),
+        errors: {}
       };
     }
 
 
     onSubmit() {
       const data = Object.assign({}, this.state.formData);
-      const { onSubmit } = this.props;
-      onSubmit(data);
+      const { onSubmit, validate } = this.props;
+      const v = validate ? validate(data) : { valid: true };
+      this.setState({ errors: v.errors || {} });
+      v.valid && onSubmit(data);
     }
 
 
@@ -36,6 +39,7 @@ export default function formCreator(Form) {
 
       return (
         <Form {...this.props} formData={this.state.formData}
+            errors={this.state.errors}
             updater={updater} onSubmit={::this.onSubmit} />
       );
     }

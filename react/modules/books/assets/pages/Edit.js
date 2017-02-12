@@ -1,48 +1,49 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router';
 import ajax from '../util/ajax';
 import withFetcher from '../util/withFetcher';
 import formCreator from '../util/formCreator';
 import BreadCrumb from '../components/BreadCrumb';
 
 
-class Edit extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      errors: {}
-    };
-  }
+const Edit = ({ book, router }) => {
+  const onSubmit = (data) => {
+    const { id } = book;
+    ajax(`/api/books/${id}`, {
+      method: 'PUT',
+      data: data
+    }).then(o => {
+      if (o.success) {
+        router.push('/books');
+      }
+    });
+  };
 
-
-  onSubmit(data) {
-    const errors = {};
-    const name = data.name.trim();
-    const price = parseFloat(data.price);
-    if (!name) {
-      errors.name = '请输入名称';
-    }
-    if (Number.isNaN(price)) {
-      errors.price = '请正确输入价格';
-    }
-
-    this.setState({ errors });
-  }
-
-
-  render() {
-    const { book } = this.props;
-    const { errors } = this.state;
-    return (
-      <div className="container">
-        <BreadCrumb />
-        <div className="page-header">
-          <h1>编辑- {book.name}</h1>
-        </div>
-        <Form formData={book} errors={errors} onSubmit={::this.onSubmit} />
+  return (
+    <div className="container">
+      <BreadCrumb />
+      <div className="page-header">
+        <h1>编辑- {book.name}</h1>
       </div>
-    );
+      <Form formData={book} validate={validate} onSubmit={onSubmit} />
+    </div>
+  );
+};
+
+
+const validate = (data) => {
+  const errors = {};
+  const name = data.name.trim();
+  const price = parseFloat(data.price);
+  if (!name) {
+    errors.name = '请输入名称';
   }
-}
+  if (Number.isNaN(price)) {
+    errors.price = '请正确输入价格';
+  }
+  const valid = Object.keys(errors).length === 0;
+  return { valid, errors };
+};
 
 
 const Form = formCreator(({ formData, errors, updater, onSubmit }) => (
@@ -81,6 +82,6 @@ const Error = ({ message }) => {
 };
 
 
-export default withFetcher(Edit, ({ params }) => {
+export default withFetcher(withRouter(Edit), ({ params }) => {
   return ajax(`/api/books/${params.id}`).then(book => ({ book }));
 });

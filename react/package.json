@@ -12,7 +12,7 @@
     "domready": "^1.0.8",
     "lodash": "^4.17.4",
     "mz": "^2.6.0",
-    "ploverx": "^3.2.0",
+    "ploverx": "^3.3.0",
     "query-string": "^4.3.1",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",

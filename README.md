@@ -15,7 +15,7 @@ npm start
 访问 `http//127.0.0.1:4000`
 
 
-## 示例目录
+## 示例
 
 - [Hello Plover](hello)
 - [静态资源的访问](static)

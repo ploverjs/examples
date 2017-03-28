@@ -1,3 +1,3 @@
 exports.index = (ctx) => {
-  ctx.render({ title: 'Hello Plover' })
-}
+  ctx.render({ title: 'Hello Plover' });
+};

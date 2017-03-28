@@ -8,7 +8,7 @@ const DATA_FILE_PATH = pathUtil.join(__dirname, 'books.json');
 
 
 exports.findAll = async () => {
-  return await getDataList();
+  return getDataList();
 };
 
 

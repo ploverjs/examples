@@ -1,4 +1,3 @@
-const pathUtil = require('path');
 const webpack = require('webpack');
 
 
@@ -25,13 +24,11 @@ module.exports = {
   plugins: [
     new webpack.LoaderOptionsPlugin({
       options: {
-        postcss: function () {
+        postcss: function() {
           return [];
         }
       }
     })
   ]
 };
-
-
 

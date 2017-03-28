@@ -15,7 +15,7 @@ exports.app = (ctx) => {
  * GET /api/books
  */
 exports.index = async (ctx) => {
-  const books =  await ctx.Book.findAll();
+  const books = await ctx.Book.findAll();
   ctx.render(books);
 };
 
@@ -35,12 +35,12 @@ exports.show = async (ctx) => {
 exports.create = async (ctx) => {
   const changeset = ctx.Book.changeset(null, ctx.params);
   if (changeset.valid) {
-    const book =  await ctx.Book.save(changeset);
+    const book = await ctx.Book.save(changeset);
     ctx.render({ success: true, book: book });
   } else {
     ctx.render({ success: false, errors: changeset.errors });
   }
-}
+};
 
 
 /**

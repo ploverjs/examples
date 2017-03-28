@@ -1,6 +1,3 @@
-const pathUtil = require('path');
-
-
 module.exports = {
   module: {
     loaders: [
@@ -18,5 +15,3 @@ module.exports = {
     jquery: 'jQuery'
   }
 };
-
-

@@ -1,7 +1,6 @@
-exports.index = function() {
+exports.index = (ctx) => {
   const data = {
     pageTitle: 'plover示例'
   };
-
-  this.render(data);
+  ctx.render(data);
 };

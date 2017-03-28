@@ -1117,16 +1117,16 @@ clone@^1.0.2:
   version "1.0.2"
   resolved "https://r.cnpmjs.org/clone/download/clone-1.0.2.tgz#260b7a99ebb1edfe247538175f783243cb19d149"
 
-co-body@^4.2.0:
-  version "4.2.0"
-  resolved "https://r.cnpmjs.org/co-body/download/co-body-4.2.0.tgz#74df20fa73262125dc45482af04e342ea8db3515"
+co-body@^5.1.0:
+  version "5.1.1"
+  resolved "https://r.cnpmjs.org/co-body/download/co-body-5.1.1.tgz#d97781d1e3344ba4a820fd1806bddf8341505236"
   dependencies:
-    inflation "~2.0.0"
-    qs "~4.0.0"
-    raw-body "~2.1.2"
-    type-is "~1.6.6"
+    inflation "^2.0.0"
+    qs "^6.4.0"
+    raw-body "^2.2.0"
+    type-is "^1.6.14"
 
-co@^4.0.2, co@^4.4.0, co@^4.6.0, co@~4.6.0:
+co@^4.6.0, co@~4.6.0:
   version "4.6.0"
   resolved "https://r.cnpmjs.org/co/download/co-4.6.0.tgz#6ea6bdf3d853ae54ccb8e47bfa0bf3f9031fb184"
 
@@ -1196,13 +1196,6 @@ commondir@^1.0.1:
   version "1.0.1"
   resolved "https://r.cnpmjs.org/commondir/download/commondir-1.0.1.tgz#ddd800da0c66127393cca5950ea968a3aaf1253b"
 
-composition@^2.1.1:
-  version "2.3.0"
-  resolved "https://r.cnpmjs.org/composition/download/composition-2.3.0.tgz#742805374cab550c520a33662f5a732e0208d6f2"
-  dependencies:
-    any-promise "^1.1.0"
-    co "^4.0.2"
-
 compressible@^2.0.0:
   version "2.0.9"
   resolved "https://r.cnpmjs.org/compressible/download/compressible-2.0.9.tgz#6daab4e2b599c2770dd9e21e7a891b1c5a755425"
@@ -1252,9 +1245,9 @@ convert-source-map@^1.1.0:
   version "1.3.0"
   resolved "https://r.cnpmjs.org/convert-source-map/download/convert-source-map-1.3.0.tgz#e9f3e9c6e2728efc2676696a70eb382f73106a67"
 
-cookies@~0.6.1:
-  version "0.6.2"
-  resolved "https://r.cnpmjs.org/cookies/download/cookies-0.6.2.tgz#6ac1b052895208e8fc4c4f5f86a9ed31b9cb5ccf"
+cookies@~0.7.0:
+  version "0.7.0"
+  resolved "https://r.cnpmjs.org/cookies/download/cookies-0.7.0.tgz#0bc961d910c35254980fc7c9eff5da12011bbf00"
   dependencies:
     depd "~1.1.0"
     keygrip "~1.0.1"
@@ -1286,7 +1279,7 @@ cosmiconfig@^2.1.0, cosmiconfig@^2.1.1:
     parse-json "^2.2.0"
     require-from-string "^1.1.0"
 
-crc@~3.4.0:
+crc@^3.4.4, crc@~3.4.0:
   version "3.4.4"
   resolved "https://r.cnpmjs.org/crc/download/crc-3.4.4.tgz#9da1e980e3bd44fc5c93bf5ab3da3378d85e466b"
 
@@ -1461,7 +1454,13 @@ date-now@^0.1.4:
   version "0.1.4"
   resolved "https://r.cnpmjs.org/date-now/download/date-now-0.1.4.tgz#eaf439fd4d4848ad74e5cc7dbef200672b9e345b"
 
-debug@*, debug@^2.1.1, debug@^2.2.0, debug@^2.6.0, debug@~2.6.0:
+debug@*, debug@^2.6.0, debug@~2.6.0, debug@~2.6.1:
+  version "2.6.1"
+  resolved "https://r.cnpmjs.org/debug/download/debug-2.6.1.tgz#79855090ba2c4e3115cc7d8769491d58f0491351"
+  dependencies:
+    ms "0.7.2"
+
+debug@^2.1.1, debug@^2.2.0:
   version "2.6.0"
   resolved "https://r.cnpmjs.org/debug/download/debug-2.6.0.tgz#bc596bcabe7617f11d9fa15361eded5608b8499b"
   dependencies:
@@ -1479,9 +1478,9 @@ debug@~2.3.0, debug@~2.3.2:
   dependencies:
     ms "0.7.2"
 
-debug@~2.6.1:
-  version "2.6.1"
-  resolved "https://r.cnpmjs.org/debug/download/debug-2.6.1.tgz#79855090ba2c4e3115cc7d8769491d58f0491351"
+debug@~2.6.3:
+  version "2.6.3"
+  resolved "https://r.cnpmjs.org/debug/download/debug-2.6.3.tgz#0f7eb8c30965ec08c72accfa0130c8b79984141d"
   dependencies:
     ms "0.7.2"
 
@@ -1489,7 +1488,7 @@ decamelize@^1.0.0, decamelize@^1.1.1, decamelize@^1.1.2:
   version "1.2.0"
   resolved "https://r.cnpmjs.org/decamelize/download/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
 
-deep-equal@^1.0.0, deep-equal@~1.0.0:
+deep-equal@~1.0.0:
   version "1.0.1"
   resolved "https://r.cnpmjs.org/deep-equal/download/deep-equal-1.0.1.tgz#f5d260292b660e084eff4cdbc9f08ad3247448b5"
 
@@ -1509,7 +1508,7 @@ delegates@^1.0.0, delegates@~1.0.0:
   version "1.0.0"
   resolved "https://r.cnpmjs.org/delegates/download/delegates-1.0.0.tgz#84c6e159b81904fdca59a0ef44cd870d31250f9a"
 
-depd@~1.1.0:
+depd@^1.1.0, depd@~1.1.0:
   version "1.1.0"
   resolved "https://r.cnpmjs.org/depd/download/depd-1.1.0.tgz#e1bd82c6aab6ced965b97b88b17ed3e528ca18c3"
 
@@ -1778,9 +1777,9 @@ form-data@~2.1.1:
     combined-stream "^1.0.5"
     mime-types "^2.1.12"
 
-fresh@^0.3.0:
-  version "0.3.0"
-  resolved "https://r.cnpmjs.org/fresh/download/fresh-0.3.0.tgz#651f838e22424e7566de161d8358caa199f83d4f"
+fresh@^0.5.0:
+  version "0.5.0"
+  resolved "https://r.cnpmjs.org/fresh/download/fresh-0.5.0.tgz#f474ca5e6a9246d6fd8e0953cfa9b9c805afa78e"
 
 from@~0:
   version "0.1.3"
@@ -2047,11 +2046,7 @@ https-browserify@0.0.1:
   version "0.0.1"
   resolved "https://r.cnpmjs.org/https-browserify/download/https-browserify-0.0.1.tgz#3f91365cabe60b77ed0ebba24b454e3e09d95a82"
 
-iconv-lite@0.4.13:
-  version "0.4.13"
-  resolved "https://r.cnpmjs.org/iconv-lite/download/iconv-lite-0.4.13.tgz#1f88aba4ab0b1508e8312acc39345f36e992e2f2"
-
-iconv-lite@~0.4.13:
+iconv-lite@0.4.15, iconv-lite@~0.4.13:
   version "0.4.15"
   resolved "https://r.cnpmjs.org/iconv-lite/download/iconv-lite-0.4.15.tgz#fe265a218ac6a57cfe854927e9d04c19825eddeb"
 
@@ -2097,13 +2092,13 @@ infinity-agent@^2.0.0:
   version "2.0.3"
   resolved "https://r.cnpmjs.org/infinity-agent/download/infinity-agent-2.0.3.tgz#45e0e2ff7a9eb030b27d62b74b3744b7a7ac4216"
 
-inflation@~2.0.0:
+inflation@^2.0.0:
   version "2.0.0"
   resolved "https://r.cnpmjs.org/inflation/download/inflation-2.0.0.tgz#8b417e47c28f925a45133d914ca1fd389107f30f"
 
-inflection@~1.10.0:
-  version "1.10.0"
-  resolved "https://r.cnpmjs.org/inflection/download/inflection-1.10.0.tgz#5bffcb1197ad3e81050f8e17e21668087ee9eb2f"
+inflection@~1.12.0:
+  version "1.12.0"
+  resolved "https://r.cnpmjs.org/inflection/download/inflection-1.12.0.tgz#a200935656d6f5f6bc4dc7502e1aecb703228416"
 
 inflight@^1.0.4:
   version "1.0.6"
@@ -2195,6 +2190,10 @@ is-fullwidth-code-point@^1.0.0:
   resolved "https://r.cnpmjs.org/is-fullwidth-code-point/download/is-fullwidth-code-point-1.0.0.tgz#ef9e31386f031a7f0d643af82fde50c457ef00cb"
   dependencies:
     number-is-nan "^1.0.0"
+
+is-generator-function@^1.0.3:
+  version "1.0.6"
+  resolved "https://r.cnpmjs.org/is-generator-function/download/is-generator-function-1.0.6.tgz#9e71653cd15fff341c79c4151460a131d31e9fc4"
 
 is-glob@^2.0.0, is-glob@^2.0.1:
   version "2.0.1"
@@ -2394,29 +2393,38 @@ kind-of@^3.0.2:
   dependencies:
     is-buffer "^1.0.2"
 
-koa-bodyparser@~2.3.0:
-  version "2.3.0"
-  resolved "https://r.cnpmjs.org/koa-bodyparser/download/koa-bodyparser-2.3.0.tgz#236ed90a16f562e79cade2b958f67c848824e818"
+koa-bodyparser@~4.2.0:
+  version "4.2.0"
+  resolved "https://r.cnpmjs.org/koa-bodyparser/download/koa-bodyparser-4.2.0.tgz#bce6e08bc65f8709b6d1faa9411c7f0d8938aa54"
   dependencies:
-    co-body "^4.2.0"
+    co-body "^5.1.0"
     copy-to "^2.0.1"
 
-koa-compose@^2.3.0, koa-compose@~2.5.1:
-  version "2.5.1"
-  resolved "https://r.cnpmjs.org/koa-compose/download/koa-compose-2.5.1.tgz#726cfb17694de5cb9fbf03c0adf172303f83f156"
+koa-compose@^3.0.0, koa-compose@~3.2.1:
+  version "3.2.1"
+  resolved "https://r.cnpmjs.org/koa-compose/download/koa-compose-3.2.1.tgz#a85ccb40b7d986d8e5a345b3a1ace8eabcf54de7"
+  dependencies:
+    any-promise "^1.1.0"
 
-koa-compress@~1.0.9:
-  version "1.0.9"
-  resolved "https://r.cnpmjs.org/koa-compress/download/koa-compress-1.0.9.tgz#a603036bedab1b9907ea77cca7d694673852e3f5"
+koa-compress@~2.0.0:
+  version "2.0.0"
+  resolved "https://r.cnpmjs.org/koa-compress/download/koa-compress-2.0.0.tgz#7b7eb2921b847746b5e122ba9f5cd8a671e8ea3a"
   dependencies:
     bytes "^2.3.0"
     compressible "^2.0.0"
     koa-is-json "^1.0.0"
     statuses "^1.0.0"
 
-koa-conditional-get@~1.0.3:
-  version "1.0.3"
-  resolved "https://r.cnpmjs.org/koa-conditional-get/download/koa-conditional-get-1.0.3.tgz#91aa03f2888aec0ae2f636f18b0cd95f158510c7"
+koa-conditional-get@~2.0.0:
+  version "2.0.0"
+  resolved "https://r.cnpmjs.org/koa-conditional-get/download/koa-conditional-get-2.0.0.tgz#a43f3723c1d014b730a34ece8adf30b93c8233f2"
+
+koa-convert@^1.2.0, koa-convert@~1.2.0:
+  version "1.2.0"
+  resolved "https://r.cnpmjs.org/koa-convert/download/koa-convert-1.2.0.tgz#da40875df49de0539098d1700b50820cebcd21d0"
+  dependencies:
+    co "^4.6.0"
+    koa-compose "^3.0.0"
 
 koa-csrf@~2.5.0:
   version "2.5.0"
@@ -2424,16 +2432,16 @@ koa-csrf@~2.5.0:
   dependencies:
     csrf "^3.0.0"
 
-koa-etag@~2.1.1:
-  version "2.1.1"
-  resolved "https://r.cnpmjs.org/koa-etag/download/koa-etag-2.1.1.tgz#ab79894e027d0f09b1087a780e6babcca33af065"
+koa-etag@~3.0.0:
+  version "3.0.0"
+  resolved "https://r.cnpmjs.org/koa-etag/download/koa-etag-3.0.0.tgz#9ef7382ddd5a82ab0deb153415c915836f771d3f"
   dependencies:
     etag "^1.3.0"
     mz "^2.1.0"
 
-koa-favicon@~1.2.1:
-  version "1.2.1"
-  resolved "https://r.cnpmjs.org/koa-favicon/download/koa-favicon-1.2.1.tgz#c001a6db6da6d71272b93fb5b924c392194821d0"
+koa-favicon@~2.0.0:
+  version "2.0.0"
+  resolved "https://r.cnpmjs.org/koa-favicon/download/koa-favicon-2.0.0.tgz#1c4e5023e71fcbfa64c59def00ae10e6942e5a6e"
   dependencies:
     mz "^2.0.0"
 
@@ -2451,11 +2459,11 @@ koa-is-json@^1.0.0:
   version "1.0.0"
   resolved "https://r.cnpmjs.org/koa-is-json/download/koa-is-json-1.0.0.tgz#273c07edcdcb8df6a2c1ab7d59ee76491451ec14"
 
-koa-response-time@~1.0.2:
-  version "1.0.2"
-  resolved "https://r.cnpmjs.org/koa-response-time/download/koa-response-time-1.0.2.tgz#35ea38df719fc7c1d2eddb8544a74b3650712884"
+koa-response-time@~2.0.0:
+  version "2.0.0"
+  resolved "https://r.cnpmjs.org/koa-response-time/download/koa-response-time-2.0.0.tgz#9590b54284dc59a9ec10f80b69048a66188342bb"
 
-koa-send@^3.3.0:
+koa-send@^3.2.0:
   version "3.3.0"
   resolved "https://r.cnpmjs.org/koa-send/download/koa-send-3.3.0.tgz#5a4ae245564680c6ecf6079e9275fa5173a861dc"
   dependencies:
@@ -2472,39 +2480,41 @@ koa-sendfile@~2.0.0:
     etag "^1.5.1"
     mz "2"
 
-koa-session@~3.4.0:
-  version "3.4.0"
-  resolved "https://r.cnpmjs.org/koa-session/download/koa-session-3.4.0.tgz#ce270291a4fcfbafe199abb64ccd9830e8c787bf"
+koa-session@~5.0.0:
+  version "5.0.0"
+  resolved "https://r.cnpmjs.org/koa-session/download/koa-session-5.0.0.tgz#7f1f9392df6c8a792901ecfbfaa1f88a084c6d2a"
   dependencies:
+    crc "^3.4.4"
     debug "^2.2.0"
-    deep-equal "^1.0.0"
+    uid-safe "^2.1.3"
 
-koa-static@^2.0.0:
-  version "2.1.0"
-  resolved "https://r.cnpmjs.org/koa-static/download/koa-static-2.1.0.tgz#cfe292ea7dabc96aa723e4a488615cc65ae74169"
+koa-static@~3.0.0:
+  version "3.0.0"
+  resolved "https://r.cnpmjs.org/koa-static/download/koa-static-3.0.0.tgz#40442233d2c0b35c225e450199c10bf8a539e416"
   dependencies:
-    debug "^2.6.0"
-    koa-send "^3.3.0"
+    debug "*"
+    koa-send "^3.2.0"
 
-koa@~1.2.5:
-  version "1.2.5"
-  resolved "https://r.cnpmjs.org/koa/download/koa-1.2.5.tgz#2b1bf59dc1f2fdd7b756e8a4f11a55eb57db6a09"
+koa@~2.2.0:
+  version "2.2.0"
+  resolved "https://r.cnpmjs.org/koa/download/koa-2.2.0.tgz#b055933187849d540ad8b9f731baaa4be97c652d"
   dependencies:
     accepts "^1.2.2"
-    co "^4.4.0"
-    composition "^2.1.1"
     content-disposition "~0.5.0"
     content-type "^1.0.0"
-    cookies "~0.6.1"
+    cookies "~0.7.0"
     debug "*"
     delegates "^1.0.0"
+    depd "^1.1.0"
     destroy "^1.0.3"
     error-inject "~1.0.0"
     escape-html "~1.0.1"
-    fresh "^0.3.0"
+    fresh "^0.5.0"
     http-assert "^1.1.0"
     http-errors "^1.2.8"
-    koa-compose "^2.3.0"
+    is-generator-function "^1.0.3"
+    koa-compose "^3.0.0"
+    koa-convert "^1.2.0"
     koa-is-json "^1.0.0"
     mime-types "^2.0.7"
     on-finished "^2.1.0"
@@ -3061,7 +3071,7 @@ osenv@0, osenv@^0.1.0:
     os-homedir "^1.0.0"
     os-tmpdir "^1.0.0"
 
-output-formatter@~1.0.1, output-formatter@~1.0.2:
+output-formatter@^1.0.2, output-formatter@~1.0.1, output-formatter@~1.0.2:
   version "1.0.2"
   resolved "https://r.cnpmjs.org/output-formatter/download/output-formatter-1.0.2.tgz#86e6564c327b4cc204599ff2e566218a221d4b63"
 
@@ -3118,12 +3128,6 @@ path-exists@^2.0.0:
 path-is-absolute@1.0.1, path-is-absolute@^1.0.0:
   version "1.0.1"
   resolved "https://r.cnpmjs.org/path-is-absolute/download/path-is-absolute-1.0.1.tgz#174b9268735534ffbc7ace6bf53a5a9e1b5c5f5f"
-
-path-to-regexp@~1.2.1:
-  version "1.2.1"
-  resolved "https://r.cnpmjs.org/path-to-regexp/download/path-to-regexp-1.2.1.tgz#b33705c140234d873c8721c7b9fd8b541ed3aff9"
-  dependencies:
-    isarray "0.0.1"
 
 path-to-regexp@~1.6.0:
   version "1.6.0"
@@ -3209,7 +3213,7 @@ plover-assets-webpack@^2.0.0:
     output-formatter "~1.0.1"
     path-to-regexp "~1.6.0"
 
-plover-assets@~3.0.0:
+plover-assets@~3.0.0-beta:
   version "3.0.0"
   resolved "https://r.cnpmjs.org/plover-assets/download/plover-assets-3.0.0.tgz#5499ed8c92bd6b611d63a12dd2e3c013dcf6e7cf"
   dependencies:
@@ -3242,13 +3246,13 @@ plover-ejs@~1.1.0:
   dependencies:
     ejs "~2.5.2"
 
-plover-logger@~1.4.0, plover-logger@~1.4.1:
+plover-logger@~1.4.0:
   version "1.4.3"
   resolved "https://r.cnpmjs.org/plover-logger/download/plover-logger-1.4.3.tgz#2262f866a792742db524e4e8f96aa6a37430e349"
   dependencies:
     debug "~2.3.0"
 
-plover-logger@~1.4.4:
+plover-logger@~1.4.1, plover-logger@~1.4.4:
   version "1.4.4"
   resolved "https://r.cnpmjs.org/plover-logger/download/plover-logger-1.4.4.tgz#2da141ecd8556f46ee3f3865aeb5151de256ce30"
   dependencies:
@@ -3262,11 +3266,11 @@ plover-module-resolver@~1.6.5, plover-module-resolver@~1.6.6:
     resolve-from "~2.0.0"
     semver "~5.3.0"
 
-plover-router@~1.4.0:
-  version "1.4.0"
-  resolved "https://r.cnpmjs.org/plover-router/download/plover-router-1.4.0.tgz#ca9b6f737d23152b03811233c6c03528ac72e58a"
+plover-router@~3.0.0-beta:
+  version "3.0.0-beta.1"
+  resolved "https://r.cnpmjs.org/plover-router/download/plover-router-3.0.0-beta.1.tgz#195323286ad8ded0b1b1f263f1bdb7c18e982e5d"
   dependencies:
-    inflection "~1.10.0"
+    inflection "~1.12.0"
 
 plover-util@~1.5.1:
   version "1.5.1"
@@ -3274,71 +3278,76 @@ plover-util@~1.5.1:
   dependencies:
     is-type-of "~1.0.0"
 
-plover-web@~1.5.3:
-  version "1.5.3"
-  resolved "https://r.cnpmjs.org/plover-web/download/plover-web-1.5.3.tgz#07d9206dff72e7fa3cba60828850c3009064f466"
-  dependencies:
-    debug "~2.6.1"
-    iconv-lite "~0.4.13"
-    koa-bodyparser "~2.3.0"
-    koa-compress "~1.0.9"
-    koa-conditional-get "~1.0.3"
-    koa-csrf "~2.5.0"
-    koa-etag "~2.1.1"
-    koa-favicon "~1.2.1"
-    koa-generic-session "~1.11.5"
-    koa-response-time "~1.0.2"
-    koa-session "~3.4.0"
-    koa-static "^2.0.0"
-    path-to-regexp "~1.7.0"
-    plover-logger "~1.4.0"
-    qs "~6.3.0"
+plover-util@~1.7.0:
+  version "1.7.0"
+  resolved "https://r.cnpmjs.org/plover-util/download/plover-util-1.7.0.tgz#d78a88b6f8bff8710004df9af23a2a6d2b569c21"
 
-plover-xview@~1.2.1:
-  version "1.2.1"
-  resolved "https://r.cnpmjs.org/plover-xview/download/plover-xview-1.2.1.tgz#da666d0d3490e4ce13ce07b446cda01b9874f479"
+plover-web@~3.0.0-beta:
+  version "3.0.0-beta.3"
+  resolved "https://r.cnpmjs.org/plover-web/download/plover-web-3.0.0-beta.3.tgz#df069ff0dde68c94783b788b94ba06f3f175fcda"
+  dependencies:
+    debug "~2.6.3"
+    iconv-lite "~0.4.13"
+    koa-bodyparser "~4.2.0"
+    koa-compress "~2.0.0"
+    koa-conditional-get "~2.0.0"
+    koa-csrf "~2.5.0"
+    koa-etag "~3.0.0"
+    koa-favicon "~2.0.0"
+    koa-generic-session "~1.11.5"
+    koa-response-time "~2.0.0"
+    koa-session "~5.0.0"
+    koa-static "~3.0.0"
+    path-to-regexp "~1.7.0"
+    plover-logger "~1.4.4"
+    qs "~6.4.0"
+
+plover-xview@~3.0.0-beta:
+  version "3.0.0-beta.1"
+  resolved "https://r.cnpmjs.org/plover-xview/download/plover-xview-3.0.0-beta.1.tgz#75de43980f6135a2a71d6b3e8ac1d546f0d5c981"
   dependencies:
     create-tag "~0.2.0"
     escape-html "~1.0.3"
-    plover-util "~1.5.1"
+    output-formatter "^1.0.2"
+    plover-util "~1.7.0"
 
-plover@~2.11.0:
-  version "2.11.0"
-  resolved "https://r.cnpmjs.org/plover/download/plover-2.11.0.tgz#3cce542a905e95eed92862d7b1bdc778318ededf"
+plover@~3.0.0-beta:
+  version "3.0.0-beta.5"
+  resolved "https://r.cnpmjs.org/plover/download/plover-3.0.0-beta.5.tgz#e861d96c87e6b89700904bff73afd1c009322d7d"
   dependencies:
     antsort "~1.1.2"
     co "~4.6.0"
     delegates "~1.0.0"
     depd "~1.1.0"
     escape-html "~1.0.3"
-    is-type-of "~1.0.0"
     jsonp-body "~1.0.0"
-    koa "~1.2.5"
-    koa-compose "~2.5.1"
+    koa "~2.2.0"
+    koa-compose "~3.2.1"
+    koa-convert "~1.2.0"
     mz "~2.6.0"
     output-formatter "~1.0.1"
-    path-to-regexp "~1.2.1"
+    path-to-regexp "~1.7.0"
     plover-logger "~1.4.0"
     plover-module-resolver "~1.6.6"
-    plover-util "~1.5.1"
+    plover-util "~1.7.0"
     ready-callback "~2.0.1"
     resolve-from "~2.0.0"
 
-ploverx@^3.3.0:
-  version "3.3.0"
-  resolved "https://r.cnpmjs.org/ploverx/download/ploverx-3.3.0.tgz#9ff13989feafb61f0f2ff224f892621483cff4c7"
+ploverx@^4.4.0-beta:
+  version "4.0.0-beta.1"
+  resolved "https://r.cnpmjs.org/ploverx/download/ploverx-4.0.0-beta.1.tgz#7d317a587a02dd887438ca56ff21016099e4dfbe"
   dependencies:
     bluebird "~3.4.6"
     fs-extra "~2.0.0"
-    plover "~2.11.0"
+    plover "~3.0.0-beta"
     plover-arttemplate "~3.1.0"
-    plover-assets "~3.0.0"
+    plover-assets "~3.0.0-beta"
     plover-benchmark "~1.1.0"
     plover-ejs "~1.1.0"
     plover-logger "~1.4.4"
-    plover-router "~1.4.0"
-    plover-web "~1.5.3"
-    plover-xview "~1.2.1"
+    plover-router "~3.0.0-beta"
+    plover-web "~3.0.0-beta"
+    plover-xview "~3.0.0-beta"
     winston "~2.3.0"
 
 postcss-calc@^5.2.0:
@@ -3673,9 +3682,9 @@ q@^1.1.2:
   version "1.4.1"
   resolved "https://r.cnpmjs.org/q/download/q-1.4.1.tgz#55705bcd93c5f3673530c2c2cbc0c2b3addc286e"
 
-qs@~4.0.0:
-  version "4.0.0"
-  resolved "https://r.cnpmjs.org/qs/download/qs-4.0.0.tgz#c31d9b74ec27df75e543a86c78728ed8d4623607"
+qs@^6.4.0, qs@~6.4.0:
+  version "6.4.0"
+  resolved "https://r.cnpmjs.org/qs/download/qs-6.4.0.tgz#13e26d28ad6b0ffaa91312cd3bf708ed351e7233"
 
 qs@~6.3.0:
   version "6.3.0"
@@ -3711,12 +3720,12 @@ randombytes@^2.0.0, randombytes@^2.0.1:
   version "2.0.3"
   resolved "https://r.cnpmjs.org/randombytes/download/randombytes-2.0.3.tgz#674c99760901c3c4112771a31e521dc349cc09ec"
 
-raw-body@~2.1.2:
-  version "2.1.7"
-  resolved "https://r.cnpmjs.org/raw-body/download/raw-body-2.1.7.tgz#adfeace2e4fb3098058014d08c072dcc59758774"
+raw-body@^2.2.0:
+  version "2.2.0"
+  resolved "https://r.cnpmjs.org/raw-body/download/raw-body-2.2.0.tgz#994976cf6a5096a41162840492f0bdc5d6e7fb96"
   dependencies:
     bytes "2.4.0"
-    iconv-lite "0.4.13"
+    iconv-lite "0.4.15"
     unpipe "1.0.0"
 
 rc@^1.0.1, rc@~1.1.6:
@@ -4323,7 +4332,7 @@ tweetnacl@^0.14.3, tweetnacl@~0.14.0:
   version "0.14.5"
   resolved "https://r.cnpmjs.org/tweetnacl/download/tweetnacl-0.14.5.tgz#5ae68177f192d4456269d108afa93ff8743f4f64"
 
-type-is@^1.5.5, type-is@~1.6.6:
+type-is@^1.5.5, type-is@^1.6.14:
   version "1.6.14"
   resolved "https://r.cnpmjs.org/type-is/download/type-is-1.6.14.tgz#e219639c17ded1ca0789092dd54a03826b817cb2"
   dependencies:
@@ -4351,7 +4360,7 @@ uid-number@~0.0.6:
   version "0.0.6"
   resolved "https://r.cnpmjs.org/uid-number/download/uid-number-0.0.6.tgz#0ea10e8035e8eb5b8e4449f06da1c730663baa81"
 
-uid-safe@2.1.3, uid-safe@~2.1.1:
+uid-safe@2.1.3, uid-safe@^2.1.3, uid-safe@~2.1.1:
   version "2.1.3"
   resolved "https://r.cnpmjs.org/uid-safe/download/uid-safe-2.1.3.tgz#077e264a00b3187936b270bb7376a26473631071"
   dependencies:

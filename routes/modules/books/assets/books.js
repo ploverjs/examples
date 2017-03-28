@@ -27,7 +27,7 @@ function handleDeleteLink() {
 
 
 function request(url, data) {
-  const form = $('<form>');
+  const form = $('<form>').appendTo('body');
   form.attr('method', 'post')
     .attr('action', url);
 

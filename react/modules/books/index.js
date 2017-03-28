@@ -5,40 +5,40 @@ const assert = require('assert');
  * GET /
  * GET /books
  */
-exports.app = function() {
-  this.layout = false;
-  this.render();
+exports.app = (ctx) => {
+  ctx.layout = false;
+  ctx.render();
 };
 
 
 /**
  * GET /api/books
  */
-exports.index = function* () {
-  const books = yield this.Book.findAll();
-  this.render(books);
+exports.index = async (ctx) => {
+  const books =  await ctx.Book.findAll();
+  ctx.render(books);
 };
 
 
 /**
  * GET /api/books/${id}
  */
-exports.show = function* () {
-  const book = yield this.Book.get(this.query.id);
-  this.render(book);
+exports.show = async (ctx) => {
+  const book = await ctx.Book.get(ctx.query.id);
+  ctx.render(book);
 };
 
 
 /**
  * POST /api/books
  */
-exports.create = function* () {
-  const changeset = this.Book.changeset(null, this.params);
+exports.create = async (ctx) => {
+  const changeset = ctx.Book.changeset(null, ctx.params);
   if (changeset.valid) {
-    const book = yield this.Book.save(changeset);
-    this.render({ success: true, book: book });
+    const book =  await ctx.Book.save(changeset);
+    ctx.render({ success: true, book: book });
   } else {
-    this.render({ success: false, errors: changeset.errors });
+    ctx.render({ success: false, errors: changeset.errors });
   }
 }
 
@@ -46,15 +46,15 @@ exports.create = function* () {
 /**
  * PUT /api/books/${id}
  */
-exports.update = function* () {
-  const book = yield this.Book.get(this.query.id);
+exports.update = async (ctx) => {
+  const book = await ctx.Book.get(ctx.query.id);
   assert(book);
-  const changeset = this.Book.changeset(book, this.params);
+  const changeset = ctx.Book.changeset(book, ctx.params);
   if (changeset.valid) {
-    yield this.Book.save(changeset);
-    this.render({ success: true });
+    await ctx.Book.save(changeset);
+    ctx.render({ success: true });
   } else {
-    this.render({ success: false, errors: changeset.errors });
+    ctx.render({ success: false, errors: changeset.errors });
   }
 };
 
@@ -62,8 +62,8 @@ exports.update = function* () {
 /**
  * DELETE /api/books/${id}
  */
-exports.delete = function* () {
-  const id = this.query.id;
-  yield this.Book.delete(id);
-  this.render({ success: true });
+exports.delete = async (ctx) => {
+  const id = ctx.query.id;
+  await ctx.Book.delete(id);
+  ctx.render({ success: true });
 };

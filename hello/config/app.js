@@ -53,12 +53,3 @@ exports.assets = {
     { match: /^\/g\/(.*)$/, prefix: '/g/??' }
   ]
 };
-
-
-/**
- * xview插件相关配置
- */
-exports.xview = {
-  enable: false
-};
-

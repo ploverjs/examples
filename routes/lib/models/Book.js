@@ -7,25 +7,25 @@ const _ = require('lodash');
 const DATA_FILE_PATH = pathUtil.join(__dirname, 'books.json');
 
 
-exports.findAll = function* () {
-  return yield getDataList();
+exports.findAll = async () => {
+  return await getDataList();
 };
 
 
-exports.get = function* (id) {
+exports.get = async (id) => {
   id = parseInt(id, 10);
-  const list = yield getDataList();
+  const list = await getDataList();
   return list.find(o => o.id === id);
 };
 
 
-exports.save = function* (changeset) {
+exports.save = async (changeset) => {
   if (!changeset.valid) {
     throw new Error('invalid changeset');
   }
 
   const book = changeset.data;
-  const list = yield getDataList();
+  const list = await getDataList();
   if (book.id) {
     const index = list.findIndex(o => o.id === book.id);
     assert(index >= 0);
@@ -36,19 +36,19 @@ exports.save = function* (changeset) {
     list.push(book);
   }
 
-  yield updateDataList(list);
+  await updateDataList(list);
 
   return book;
 };
 
 
-exports.delete = function* (id) {
+exports.delete = async (id) => {
   id = parseInt(id, 10);
-  const list = yield getDataList();
+  const list = await getDataList();
   const index = list.findIndex(o => o.id === id);
   if (index !== -1) {
     list.splice(index, 1);
-    yield updateDataList(list);
+    await updateDataList(list);
     return true;
   }
   return false;
@@ -83,13 +83,13 @@ exports.changeset = function(book, params) {
 };
 
 
-function* getDataList() {
-  const json = yield fs.readFile(DATA_FILE_PATH, 'utf-8');
+async function getDataList() {
+  const json = await fs.readFile(DATA_FILE_PATH, 'utf-8');
   return JSON.parse(json);
 }
 
 
-function* updateDataList(list) {
+async function updateDataList(list) {
   const json = JSON.stringify(list);
-  yield fs.writeFile(DATA_FILE_PATH, json);
+  await fs.writeFile(DATA_FILE_PATH, json);
 }

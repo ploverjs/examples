@@ -62,7 +62,7 @@ hello/
 
 ```js
 dependencies: {
-  "ploverx": "^2.4.0"
+  "ploverx": "^4.0.0"
 }
 ```
 
@@ -126,8 +126,8 @@ module.exports = ({ get }) => {
 - index.js
 
 ```js
-exports.index = function() {
-  this.render({ title: 'Hello Plover' });
+exports.index = (ctx) => {
+  ctx.render({ title: 'Hello Plover' });
 };
 ```
 
@@ -151,12 +151,11 @@ exports.index = function() {
 - index.js
 
 ```js
-exports.index = function() {
+exports.index = (ctx) => {
   const data = {
     pageTitle: 'plover示例'
   };
-
-  this.render(data);
+  ctx.render(data);
 };
 ```
 

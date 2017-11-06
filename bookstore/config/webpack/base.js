@@ -36,7 +36,7 @@ module.exports = {
     path: distPath,
     filename: '[name].js',
     chunkFilename: "[id]-[chunkhash].js",
-    publicPath: '/'
+    publicPath: '/g/'
   },
 
 

@@ -12,6 +12,9 @@
     {{= content}}
     {{= assets.js('lib.js')}}
     {{= assets.jsTag()}}
+    {{if (settings.env === 'development')}}
+    <script src="//localhost:35729/livereload.js?snipver=1"></script>
+    {{/if}}
   </body>
 </html>
 

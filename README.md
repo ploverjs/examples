@@ -17,6 +17,24 @@ npm start
 
 ## 示例
 
-- [Hello Plover](hello)
-- [静态资源的访问](static)
-- [BookStore](bookstore)
+### Hello Plover
+
+[查看](hello)
+
+演示最简单的一个Plover应用
+
+## 静态资源的访问
+
+[查看](static)
+
+## BookStore
+
+[查看](bookstore)
+
+一个相对完整的示例，主要包括以下内容
+
+- 路由和控制器
+- webpack的集成和前端资源的引用
+- service的使用
+- helper的使用
+- view和control的渲染

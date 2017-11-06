@@ -19,5 +19,4 @@ npm start
 
 - [Hello Plover](hello)
 - [静态资源的访问](static)
-- [路由和RESTful](routes)
-- [结合React使用](react)
+- [BookStore](bookstore)

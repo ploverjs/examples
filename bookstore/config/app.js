@@ -52,10 +52,4 @@ exports.assets = {
   prefix: '/g',
   // 如果婺源发到CDN，则需要设置资源的URL前缀
   //urlPrefix: 'https://cdn.static.com/hello-react/'
-
-  // 允许node_modules中的静态资源模块作为plover模块引用
-  vendors: [
-    'bootstrap',
-    'jquery'
-  ]
 };

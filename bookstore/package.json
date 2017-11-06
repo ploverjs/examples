@@ -1,0 +1,46 @@
+{
+  "name": "bookstore",
+  "version": "1.0.0",
+  "description": "一个较为完整的例子，包括restful routes, 前端资源的处理等。",
+  "scripts": {
+    "start": "pm2 start pm2.json",
+    "stop": "pm2 stop bootstore",
+    "dev": "node dev.js",
+    "webpack": "webpack --watch-stdin --progress --color --config config/webpack.config.js",
+    "webpack:build": "webpack -p --env dist --config config/webpack.config.js",
+    "plover:build": "plover-build",
+    "lint": "eslint static",
+    "build": "rm -rf public/g && npm run webpack:build && npm run plover:build"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "global": "^4.3.1",
+    "jquery": "^3.1.1",
+    "lodash": "^4.17.4",
+    "mz": "^2.6.0",
+    "ploverx": "^4.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.5",
+    "image-webpack-loader": "^3.2.0",
+    "livereload": "^0.6.3",
+    "nodemon": "^1.11.0",
+    "postcss-loader": "^2.0.5",
+    "precss": "^2.0.0",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^0.19.0",
+    "svgo-loader": "^1.1.2",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.0.0",
+    "webpack-bundle-analyzer": "^2.3.1",
+    "webpack-merge": "^4.1.0"
+  },
+  "license": "ISC"
+}

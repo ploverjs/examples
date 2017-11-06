@@ -1,9 +1,6 @@
-/**
- * @webpack.entry
- */
-
 import $ from 'jquery';
 
+import './style.css';
 
 $(ready);
 

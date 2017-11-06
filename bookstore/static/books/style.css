@@ -1,4 +1,4 @@
-.clearfix() {
+@define-mixin clearfix {
   &:after {
     content: '';
     display: block;
@@ -16,7 +16,7 @@
   max-width: 800px;
 
   li {
-    .clearfix;
+    @mixin clearfix;
     background: url('./img/bg.png');
   }
 
@@ -28,7 +28,6 @@
   .btn-group {
     float: right;
   }
-
 }
 
 

@@ -1,0 +1,38 @@
+.new-btn {
+  margin-bottom: 1em;
+}
+
+
+.books {
+  max-width: 800px;
+}
+
+
+.books li:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+
+.books li {
+  background: url(/d41d8cd98f00b204e9800998ecf8427e.png);
+}
+
+
+.books .name {
+    float: left;
+    line-height: 30px;
+  }
+
+
+.books .btn-group {
+    float: right;
+  }
+
+
+.edit-form {
+  width: 800px;
+}
+
+/*# sourceMappingURL=books.css.map*/

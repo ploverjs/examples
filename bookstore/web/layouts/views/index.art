@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>{{pageTitle}}</title>
-    {{$.metaTags()}}
-    {{assets.css('bootstrap:css/bootstrap.css')}}
-    {{assets.cssTag()}}
+    {{= $.metaTags()}}
+    {{= assets.css('lib.css')}}
+    {{= assets.cssTag()}}
   </head>
   <body class="page-{{pageName}}">
-    {{content}}
-    {{assets.js('jquery:jquery.min.js')}}
-    {{assets.jsTag()}}
+    {{= content}}
+    {{= assets.js('lib.js')}}
+    {{= assets.jsTag()}}
   </body>
 </html>
 

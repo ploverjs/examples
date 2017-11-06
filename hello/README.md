@@ -32,7 +32,7 @@ hello/
     app.js      # 应用配置
     routes.js   # 路由配置
 
-  modules/    # 模块
+  web/    # 模块目录
     home/       # 一个叫`home`的模块
       views/      # 模板目录
         index.ejs   # ejs模板文伯
@@ -113,7 +113,7 @@ module.exports = ({ get }) => {
 以上表示将`/` 路由到`home`模块的`index`action。
 
 
-### modules/
+### web/
 
 承载应用相关模块的主目录。刚才的示例有一个`home`模块和一个`layouts`模块。  
 一个模块包含涉及功能的所有资源。由控制器、模板、js、css和图片资源等组成。  

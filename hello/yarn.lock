@@ -65,6 +65,10 @@ colors@1.0.x:
   version "1.0.3"
   resolved "https://r.cnpmjs.org/colors/download/colors-1.0.3.tgz#0433f44d809680fdeb60ed260f1b0c262e82a40b"
 
+commander@^2.10.0:
+  version "2.11.0"
+  resolved "https://r.cnpmjs.org/commander/download/commander-2.11.0.tgz#157152fd1e7a6c8d98a5b715cf376df928004563"
+
 compressible@^2.0.0:
   version "2.0.9"
   resolved "https://r.cnpmjs.org/compressible/download/compressible-2.0.9.tgz#6daab4e2b599c2770dd9e21e7a891b1c5a755425"
@@ -176,14 +180,6 @@ eyes@0.1.x:
 fresh@^0.5.0:
   version "0.5.0"
   resolved "https://r.cnpmjs.org/fresh/download/fresh-0.5.0.tgz#f474ca5e6a9246d6fd8e0953cfa9b9c805afa78e"
-
-fs-extra@^3.0.1:
-  version "3.0.1"
-  resolved "https://r.cnpmjs.org/fs-extra/download/fs-extra-3.0.1.tgz#3794f378c58b342ea7dbbb23095109c4b3b62291"
-  dependencies:
-    graceful-fs "^4.1.2"
-    jsonfile "^3.0.0"
-    universalify "^0.1.0"
 
 fs-extra@^4.0.0:
   version "4.0.1"
@@ -624,12 +620,13 @@ plover@^3.0.1:
     ready-callback "^2.0.1"
     resolve-from "^2.0.0"
 
-ploverx@^4.1.0:
-  version "4.1.0"
-  resolved "https://r.cnpmjs.org/ploverx/download/ploverx-4.1.0.tgz#45855eb3f81ee6c4e92eebcc35253718dfccb1c4"
+ploverx@^4.3.0:
+  version "4.3.0"
+  resolved "https://r.cnpmjs.org/ploverx/download/ploverx-4.3.0.tgz#731ceddda2a53916345d46ed78ba30d7ee82dd19"
   dependencies:
     bluebird "^3.5.0"
-    fs-extra "^3.0.1"
+    commander "^2.10.0"
+    fs-extra "^4.0.0"
     plover "^3.0.1"
     plover-arttemplate "^3.1.0"
     plover-assets "^4.0.0"

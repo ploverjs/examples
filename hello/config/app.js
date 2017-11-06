@@ -1,9 +1,18 @@
+const pathUtil = require('path');
+
+
 /**
  * 服务器相关配置
  */
 exports.server = {
   port: 4000
 };
+
+
+/**
+ * 模块目录
+ */
+exports.modulesDir = pathUtil.join(__dirname, '../web');
 
 
 /**

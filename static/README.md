@@ -20,7 +20,7 @@ exports.web = {
 
 运行示例后可以访问：
 
-```
+```shell
 http://127.0.0.1:4000/logo.png
 ```
 
